@@ -130,6 +130,35 @@ if (thumbnailSlider) {
   }
 }
 
+// Cart items counter
+const countUps = document.querySelectorAll('.counter--up');
+const countDowns = document.querySelectorAll('.counter--down');
+let count = 1;
+
+for (let i = 0; i < countUps.length; i++) {
+  const countUp = countUps[i];
+  countUp.addEventListener('click', addItems);
+
+  function addItems() {
+    let itemQty = countUp.previousElementSibling;
+    count++;
+    itemQty.value = count;
+  }
+}
+
+for (let i = 0; i < countDowns.length; i++) {
+  const countDown = countDowns[i];
+  countDown.addEventListener('click', removeItems);
+
+  function removeItems() {
+    let itemQty = countDown.nextElementSibling;
+    if (count > 1) {
+      count--;
+      itemQty.value = count;
+    }
+  }
+}
+
 // Popups close
 const closePopups = document.querySelectorAll('.popup .close');
 
