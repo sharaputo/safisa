@@ -515,11 +515,6 @@ a {
   width: 100%;
   padding: 0 30px;
 }
-@media only screen and (max-width: 767px) {
-  .container {
-    padding: 0 15px;
-  }
-}
 .cookie {
   position: fixed;
   bottom: 0;
@@ -3224,6 +3219,9 @@ and make it occupy the whole card using ::after like in the example: */
   }
   .contacts .page-title {
     margin-bottom: 30px;
+  }
+  .container {
+    padding: 0 15px;
   }
   .delivery .page-title {
     margin-bottom: 30px;
