@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sign Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a {
+      color: #f5f0ec;
+    }
+  </style>
+</head>
+
+<body tabIndex="0">
+  <!-- @import "header.html" -->
+  <main>
+    <section class="sign-up page-padding">
+      <div class="container">
+        <div class="sign-up__body">
+          <h1 class="page-title">Sign up</h1>
+          <div class="sign-up__form">
+            <form action="#!" class="profile-form">
+              <ul class="profile-form__inputs" role="none">
+                <li class="profile-form__input">
+                  <label for="signup_email">Email</label>
+                  <div class="input">
+                    <input type="email" class="error" id="signup_email" name="signup_email"
+                      placeholder="info@gmail.com">
+                  </div>
+                </li>
+                <li class="profile-form__input">
+                  <label for="signup_password">Password</label>
+                  <div class="input">
+                    <input type="password" id="signup_password" name="signup_password"
+                      placeholder="......................">
+                    <button type="button" class="password-icon">
+                      <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
+                      <img src="img/icons/icon-password-hide.svg" class="hidden inject-me" alt="icon show password">
+                    </button>
+                  </div>
+                </li>
+                <li class="profile-form__input">
+                  <label for="signup_password_confirm">Confirm password</label>
+                  <div class="input">
+                    <input type="password" id="signup_password_confirm" name="signup_password_confirm"
+                      placeholder="......................">
+                    <button type="button" class="password-icon">
+                      <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
+                      <img src="img/icons/icon-password-hide.svg" class="hidden inject-me" alt="icon show password">
+                    </button>
+                  </div>
+                </li>
+              </ul>
+              <p class="profile-form__agreement">
+                By registering, you accept the
+                <a href="#privacy-policy">site rules</a> and consent to the
+                processing of personal data
+              </p>
+              <button type="submit" class="btn btn--black">Sign up</button>
+            </form>
+          </div>
+          <p class="link">
+            Already have an account? <a href="#sign-in">Sign in</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- @import "footer.html" -->
+  <script src="js/libs/svg-injector.js"></script>
+  <script src="js/libs/splide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

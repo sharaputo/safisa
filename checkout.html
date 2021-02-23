@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Checkout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a {
+      color: #f5f0ec;
+    }
+  </style>
+</head>
+
+<body tabIndex="0">
+<header class="header">
+  <div class="header__announcement">
+    <span class="shipping">Free shipping over $35</span>
+  </div>
+  <div class="container">
+    <div class="header__body">
+      <button class="header__burger" type="button" aria-label="Menu" aria-controls="navigation">
+        <div class="menu-switcher"></div>
+      </button>
+      <a href="#home" class="header__logo" aria-hidden="true" tabindex="-1">
+        <img src="img/logo.svg" alt="Safisa">
+      </a>
+      <nav class="header__nav">
+        <div class="currency-dropdown">
+          <form action="#" class="currency">
+            <div class="currency__wrapper has-dropdown">
+              <button type="button" class="currency__option">usd ($)</button>
+              <div class="arrow"></div>
+              <ul class="currency__list visually-hidden">
+                <li class="currency__item">
+                  <button class="currency__select" type="button" name="CAD">
+                    cad (C$)
+                  </button>
+                </li>
+                <li class="currency__item">
+                  <button class="currency__select" type="button" name="GBP">
+                    gbp (£)
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+        <ul class="site-menu">
+          <li class="site-menu__item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="site-menu__item has-dropdown">
+            <button>Shop</button>
+            <div class="arrow"></div>
+            <ul class="site-menu__sub-list visually-hidden">
+              <li class="site-menu__sub-item">
+                <a href="#acne-care">Acne care</a>
+              </li>
+              <li class="site-menu__sub-item">
+                <a href="#hair-care">Hair care</a>
+              </li>
+              <li class="site-menu__sub-item">
+                <a href="#skin-care">Skin care</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-menu__item">
+            <a href="#about-us">About us</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="#beauty-tips">Beauty tips</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="#reviews">Reviews</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="#B2B">B2B</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__user">
+        <div class="profile has-dropdown active">
+          <button>My profile</button>
+          <ul class="profile__list visually-hidden">
+            <li class="profile__item">
+              <a href="#profile">Profile</a>
+            </li>
+            <li class="profile__item">
+              <a href="#orders">Orders</a>
+            </li>
+            <li class="profile__item">
+              <button type="button" class="logout">Sign out of account</button>
+            </li>
+          </ul>
+        </div>
+        <a href="#sign-in" class="account hidden">Sign in</a>
+        <a href="#cart" class="cart">
+          <span class="label">Cart</span>
+          <div class="value">0</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>  <main>
+    <section class="checkout page-padding">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="#cart">Cart</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span>Checkout</span>
+          </li>
+        </ul>
+        <h1 class="page-title">Checkout</h1>
+        <div class="checkout__body">
+          <div class="checkout__form">
+            <form action="#!" class="checkout-form">
+              <div class="checkout-form__email">
+                <fieldset>
+                  <div class="input">
+                    <legend>1. Your Email</legend>
+                    <label for="checkout_email" class="screen-reader">Your Email</label>
+                    <input type="email" name="checkout_email" id="checkout_email" class="error"
+                      placeholder="info@gmail.com" required>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="checkout-form__shipping">
+                <fieldset>
+                  <legend>2. Shipping</legend>
+                  <ul class="inputs" role="none">
+                    <li class="input">
+                      <label for="checkout_name" class="screen-reader">First Name</label>
+                      <input type="text" id="checkout_name" name="checkout_name" placeholder="First Name">
+                    </li>
+                    <li class="input">
+                      <label for="checkout_surname" class="screen-reader">Last Name</label>
+                      <input type="text" id="checkout_surname" name="checkout_surname" placeholder="Last Name">
+                    </li>
+                  </ul>
+                  <div class="input">
+                    <label for="checkout_address" class="screen-reader">Adress</label>
+                    <input type="text" name="checkout_address" id="checkout_address" placeholder="Adress">
+                  </div>
+                  <div class="input">
+                    <label for="checkout_usa" class="screen-reader">United States</label>
+                    <input type="text" name="checkout_usa" id="checkout_usa" placeholder="United States" disabled>
+                  </div>
+                  <ul class="inputs">
+                    <li class="input">
+                      <label for="checkout_zip" class="screen-reader">ZIP Code</label>
+                      <input type="text" name="checkout_zip" id="checkout_zip" placeholder="ZIP Code">
+                    </li>
+                    <li class="input">
+                      <label for="checkout_city" class="screen-reader">City</label>
+                      <input type="text" name="checkout_city" id="checkout_city" placeholder="City">
+                    </li>
+                    <li class="input">
+                      <label for="checkout_state" class="screen-reader">State</label>
+                      <input type="text" name="checkout_state" id="checkout_state" placeholder="State">
+                    </li>
+                  </ul>
+                  <div class="input">
+                    <label for="checkout_phone" class="screen-reader">Phone Number</label>
+                    <input type="tel" name="checkout_phone" id="checkout_phone" placeholder="Phone Number">
+                  </div>
+                  <ul class="radios delivery">
+                    <li class="radio">
+                      <div class="option">
+                        <input type="radio" id="checkout_courier" name="checkout_shipping">
+                        <div class="input-control"></div>
+                        <div class="label">
+                          <label for="checkout_courier">Courier delivery (1-6 days)</label>
+                          <p class="info">Online payment</p>
+                        </div>
+                      </div>
+                      <div class="price">
+                        <span class="label">+</span>
+                        <span class="value">$ 40</span>
+                      </div>
+                    </li>
+                    <li class="radio">
+                      <div class="option">
+                        <input type="radio" id="checkout_usps" name="checkout_shipping">
+                        <div class="input-control"></div>
+                        <div class="label">
+                          <label for="checkout_usps">USPS (3-5 days)</label>
+                          <p class="info">Online payment</p>
+                        </div>
+                      </div>
+                      <div class="price">
+                        <span class="label">+</span>
+                        <span class="value">$ 40</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="input textarea">
+                    <label for="checkout_message" class="screen-reader">Comments on the order</label>
+                    <textarea name="checkout_message" id="checkout_message" rows="7"
+                      placeholder="Comments on the order"></textarea>
+                  </div>
+                  <ul class="radios payment">
+                    <li class="radio">
+                      <input type="radio" id="checkout_credit_card" name="checkout_payment">
+                      <div class="input-control"></div>
+                      <label for="checkout_credit_card">Credit card</label>
+                    </li>
+                    <li class="radio">
+                      <input type="radio" id="checkout_paypal" name="checkout_payment">
+                      <div class="input-control"></div>
+                      <label for="checkout_paypal">Paypal</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <div class="agreement">
+                  <input type="checkbox" name="checkout_agreement" id="checkout_agreement" required>
+                  <label for="checkout_agreement">
+                    <span>I agree with the </span>
+                    <a href="#privacy-policy">Privacy Policy</a>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn--black btn--mobile">
+                  Proceed to checkout
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="checkout__summary">
+            <h2 class="subtitle">Order Summary</h2>
+            <div class="details">
+              <div class="image">
+                <img src="img/product-frecommendation-1.jpg" alt="">
+              </div>
+              <span class="title">Face cream</span>
+              <div class="price-details">
+                <span class="price">$ 60.00</span>
+                <div class="qty">
+                  <span class="label">Qty</span>
+                  <span class="value">1</span>
+                </div>
+              </div>
+            </div>
+            <div class="details">
+              <div class="image">
+                <img src="img/product-frecommendation-1.jpg" alt="">
+              </div>
+              <span class="title">Face cream</span>
+              <div class="price-details">
+                <span class="price">$ 60.00</span>
+                <div class="qty">
+                  <span class="label">Qty</span>
+                  <span class="value">1</span>
+                </div>
+              </div>
+            </div>
+            <div class="subtotal">
+              <span class="label">Subtotal</span>
+              <span class="value">$ 120.00</span>
+            </div>
+            <div class="tax">
+              <span class="label">Tax</span>
+              <span class="value">-</span>
+            </div>
+            <div class="shipping">
+              <span class="label">Shipping</span>
+              <span class="value">$ 40.00</span>
+            </div>
+            <div class="total">
+              <span class="label">Total</span>
+              <span class="value">$ 160.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__body">
+      <small class="footer__brand">&copy; 2015 SAFISA</small>
+      <nav class="footer__nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#contacts">Contacts</a>
+          </li>
+          <li class="menu__item">
+            <a href="#payment">Payment</a>
+          </li>
+          <li class="menu__item">
+            <a href="#delivery">Delivery</a>
+          </li>
+          <li class="menu__item">
+            <a href="#return">Return</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#home" class="footer__logo" aria-hidden="true" tabindex="-1">
+        <img src="img/logo.svg" alt="Safisa">
+      </a>
+      <ul class="footer__links">
+        <li class="footer__link">
+          <a href="#policy">Privacy Policy</a>
+        </li>
+        <li class="footer__link">
+          <a href="#instagram">Site creation</a>
+        </li>
+      </ul>
+      <ul class="footer__socials">
+        <li class="footer__social">
+          <a href="#facebook">
+            <img src="img/icons/icon-facebook.svg" class="inject-me" alt="facebook icon">
+          </a>
+        </li>
+        <li class="footer__social">
+          <a href="#instagram">
+            <img src="img/icons/icon-instagram.svg" class="inject-me" alt="instagram icon">
+          </a>
+        </li>
+        <li class="footer__social">
+          <a href="#pinterest">
+            <img src="img/icons/icon-pinterest.svg" class="inject-me" alt="pinterest icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>  <script src="js/libs/svg-injector.js"></script>
+  <script src="js/libs/splide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

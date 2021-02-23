@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>B2B</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a {
+      color: #f5f0ec;
+    }
+  </style>
+</head>
+
+<body tabIndex="0">
+  <!-- @import "header.html" -->
+  <main>
+    <section class="b2b">
+      <div class="container">
+        <h1 class="page-title">B2B</h1>
+        <p class="b2b__notification">Coming soon May 2021</p>
+      </div>
+    </section>
+    <section class="contact contact--b2b section-padding">
+      <div class="container">
+        <div class="contact__body">
+          <div class="contact__image">
+            <picture>
+              <source srcset="
+                    img/contact/contact-lg-1x.webp,
+                    img/contact/contact-lg-2x.webp 2x
+                  " media="(min-width: 600px)" type="image/webp">
+              <source srcset="
+                    img/contact/contact-lg-1x.jpg,
+                    img/contact/contact-lg-2x.jpg 2x
+                  " media="(min-width: 600px)" type="image/jpeg">
+              <source srcset="
+                    img/contact/contact-sm-1x.webp,
+                    img/contact/contact-sm-2x.webp 2x
+                  " type="image/webp">
+              <source srcset="
+                    img/contact/contact-sm-1x.jpg,
+                    img/contact/contact-sm-2x.jpg 2x
+                  " type="image/jpeg">
+              <img src="img/contact/contact-lg-1x.jpg" alt="acne care" srcset="img/contact/contact-lg-2x.jpg 2x">
+            </picture>
+          </div>
+          <div class="contact__info">
+            <h2 class="page-title">
+              Have questions or want to discuss cooperation?
+            </h2>
+            <div class="wrapper">
+              <p class="contact__text">
+                Write to us - and we will help you form the task and tell you
+                about the process.
+              </p>
+              <form action="#!">
+                <ul class="contact__form" role="none">
+                  <li class="contact__input">
+                    <label for="name" class="screen-reader">Name</label>
+                    <input type="text" name="name" placeholder="Name *" required>
+                  </li>
+                  <li class="contact__input">
+                    <label for="phone" class="screen-reader">Telephone</label>
+                    <input type="tel" class="error" name="tel" placeholder="Telephone *" required>
+                  </li>
+                  <li class="contact__input">
+                    <label for="email" class="screen-reader">Email</label>
+                    <input type="email" name="email" placeholder="email *" required>
+                  </li>
+                </ul>
+                <p class="contact__policy">
+                  By clicking on the "send" button, I agree to the processing
+                  of personal data in accordance with the
+                  <a href="#privacy-policy">Privacy Policy</a>
+                </p>
+                <button type="submit" class="btn btn--black btn--mobile">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="contact-popup popup">
+      <div class="contact-popup__backdrop"></div>
+      <div class="contact-popup__body">
+        <button type="button" class="close">
+          <img src="img/icons/icon-close.svg" class="inject-me" alt="close icon">
+        </button>
+        <div class="contact-popup__icon">
+          <img src="img/icons/icon-success.svg" alt="icon success">
+        </div>
+        <p class="contact-popup__text">
+          You have successfully submitted your application.<br>A manager
+          will contact you shortly.
+        </p>
+      </div>
+    </div>
+  </main>
+  <!-- @import "footer.html" -->
+  <script src="js/libs/svg-injector.js"></script>
+  <script src="js/libs/splide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sign In</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a {
+      color: #f5f0ec;
+    }
+  </style>
+</head>
+
+<body tabIndex="0">
+  <!-- @import "header.html" -->
+  <main>
+    <section class="sign-in page-padding">
+      <div class="container">
+        <div class="sign-in__body">
+          <h1 class="page-title">Sign in</h1>
+          <ul class="sign-in__socials">
+            <li class="sign-in__social">
+              <a href="#google">
+                <img src="img/icons/icon-google.svg" class="inject-me" alt="icon google">
+              </a>
+            </li>
+            <li class="sign-in__social">
+              <a href="#google">
+                <img src="img/icons/icon-facebook.svg" class="inject-me" alt="icon facebook">
+              </a>
+            </li>
+          </ul>
+          <div class="sign-in__choice">or</div>
+          <div class="sign-in__form">
+            <form action="#!" class="profile-form">
+              <ul class="profile-form__inputs" role="none">
+                <li class="profile-form__input">
+                  <label for="signin_email">Email</label>
+                  <div class="input">
+                    <input type="email" id="signin_email" name="signin_email" placeholder="info@gmail.com">
+                  </div>
+                </li>
+                <li class="profile-form__input">
+                  <div class="label-wrapper">
+                    <label for="signin_password">Password</label>
+                    <a href="#password-recovery" class="remind-password">Forgot?</a>
+                  </div>
+                  <div class="input">
+                    <input type="password" id="signin_password" name="signin_password"
+                      placeholder="......................">
+                    <button type="button" class="password-icon">
+                      <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
+                      <img src="img/icons/icon-password-hide.svg" class="hidden inject-me" alt="icon show password">
+                    </button>
+                  </div>
+                </li>
+              </ul>
+              <button type="submit" class="btn btn--black">Sign in</button>
+            </form>
+          </div>
+          <p class="link">New to the site? <a href="#sign-up">Sign up</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- @import "footer.html" -->
+  <script src="js/libs/svg-injector.js"></script>
+  <script src="js/libs/splide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

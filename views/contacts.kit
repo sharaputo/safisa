@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contacts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a {
+      color: #f5f0ec;
+    }
+  </style>
+</head>
+
+<body tabIndex="0">
+  <!-- @import "header.html" -->
+  <main>
+    <section class="contacts">
+      <div class="contacts__body">
+        <div class="contacts__image">
+          <picture>
+            <source srcset="
+                  img/contacts/contacts-xl-1x.webp,
+                  img/contacts/contacts-xl-2x.webp 2x
+                " media="(min-width: 1441px)" type="image/webp">
+            <source srcset="
+                  img/contacts/contacts-xl-1x.jpg,
+                  img/contacts/contacts-xl-2x.jpg 2x
+                " media="(min-width: 1441px)" type="image/jpeg">
+            <source srcset="
+                  img/contacts/contacts-lg-1x.webp,
+                  img/contacts/contacts-lg-2x.webp 2x
+                " media="(min-width: 600px)" type="image/webp">
+            <source srcset="
+                  img/contacts/contacts-lg-1x.jpg,
+                  img/contacts/contacts-lg-2x.jpg 2x
+                " media="(min-width: 600px)" type="image/jpeg">
+            <source srcset="
+                  img/contacts/contacts-sm-1x.webp,
+                  img/contacts/contacts-sm-2x.webp 2x
+                " type="image/webp">
+            <source srcset="
+                  img/contacts/contacts-sm-1x.jpg,
+                  img/contacts/contacts-sm-2x.jpg 2x
+                " type="image/jpeg">
+            <img src="img/contacts/contacts-lg-1x.jpg"
+              alt="smiling woman with some cream on her face and hair is covered with a blanket"
+              srcset="img/contacts/contacts-lg-2x.jpg 2x">
+          </picture>
+        </div>
+        <div class="contacts__info">
+          <h1 class="page-title">Contacts</h1>
+          <a href="tel:+79313452305" class="contacts__phone">+ 7 931 345 23 05</a>
+          <a href="mailto:info@gmail.com" class="contacts__email">info@gmail.com</a>
+          <ul class="contacts__socials">
+            <li class="contacts__social">
+              <a href="#facebook">
+                <img src="img/icons/icon-facebook.svg" class="inject-me" alt="facebook icon">
+              </a>
+            </li>
+            <li class="contacts__social">
+              <a href="#instagram">
+                <img src="img/icons/icon-instagram.svg" class="inject-me" alt="instagram icon">
+              </a>
+            </li>
+            <li class="contacts__social">
+              <a href="#pinterest">
+                <img src="img/icons/icon-pinterest.svg" class="inject-me" alt="pinterest icon">
+              </a>
+            </li>
+          </ul>
+          <a href="index.html#contact" class="contacts__link btn btn--black btn--mobile">Request a call back</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- @import "footer.html" -->
+  <script src="js/libs/svg-injector.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

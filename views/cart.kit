@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shopping cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a {
+      color: #f5f0ec;
+    }
+  </style>
+</head>
+
+<body tabIndex="0">
+  <!-- @import "header.html" -->
+  <main>
+    <section class="shopping-cart page-padding">
+      <div class="container">
+        <h1 class="page-title">Shopping cart</h1>
+        <p class="no-goods">There is nothing here yet</p>
+        <form action="#">
+          <div class="shopping-cart__table table">
+            <div class="table__headers">
+              <div class="table__header item">Item</div>
+              <div class="table__header quantity">
+                <span class="label label--lg">Quantity</span>
+                <span class="label label--sm">qty.</span>
+              </div>
+              <div class="table__header price">Price</div>
+            </div>
+            <div class="table__content removed">
+              <div class="table__data item">
+                <div class="item-removed active">
+                  <span class="label">You have removed</span>
+                  <span class="value">Face cream</span>
+                </div>
+                <a href="#!" class="product-link hidden">
+                  <div class="image">
+                    <img src="img/cart-item.jpg" alt="">
+                  </div>
+                  <p class="title">Face cream</p>
+                </a>
+              </div>
+              <div class="table__data items-counter quantity hidden">
+                <div class="items-counter__form">
+                  <button type="button" id="count_up" class="counter">
+                    -
+                  </button>
+                  <input type="text" name="quantity" class="input" value="1" inputmode="numeric">
+                  <button type="button" id="count_down" class="counter">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="table__data price">
+                <div class="amount">
+                  <button type="button" class="return active">Return</button>
+                  <span class="value hidden">$ 60.00</span>
+                  <button type="button" class="remove">
+                    <img src="img/icons/icon-remove.svg" alt="icon remove">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="table__content">
+              <div class="table__data item">
+                <a href="#!" class="product-link">
+                  <div class="image">
+                    <img src="img/cart-item.jpg" alt="">
+                  </div>
+                  <p class="title">Face cream</p>
+                </a>
+              </div>
+              <div class="table__data items-counter quantity">
+                <div class="items-counter__form">
+                  <button type="button" id="count_up" class="counter">
+                    -
+                  </button>
+                  <input type="text" name="quantity" class="input" value="1" inputmode="numeric">
+                  <button type="button" id="count_down" class="counter">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="table__data price">
+                <div class="amount">
+                  <span class="value">$ 60.00</span>
+                  <button type="button" class="remove">
+                    <img src="img/icons/icon-remove.svg" alt="icon remove">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="total">
+              <span class="label">Subtotal</span>
+              <span class="value">$ 120.00</span>
+            </div>
+            <div class="checkout">
+              <button type="submit" class="btn btn--black btn--mobile">
+                Checkout
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- @import "footer.html" -->
+  <script src="js/libs/svg-injector.js"></script>
+  <script src="js/libs/splide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

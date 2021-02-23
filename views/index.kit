@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Safisa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a {
+      color: #f5f0ec;
+    }
+  </style>
+</head>
+
+<body tabIndex="0">
+  <!-- @import "header.html" -->
+  <main>
+    <section class="hero">
+      <div class="hero__body">
+        <h1 class="hero__title">Beauty brand</h1>
+        <div class="hero__logo">
+          <img src="img/hero-logo.svg" alt="Safisa London">
+        </div>
+        <a href="#acne-care" class="hero__btn btn btn--black">Shop now</a>
+      </div>
+      <div class="hero__bg">
+        <div class="splide hero__slider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <picture>
+                  <source srcset="
+                        img/hero/hero-slide-1-xl-1x.webp,
+                        img/hero/hero-slide-1-xl-2x.webp 2x
+                      " media="(min-width: 1441px)" type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-1-xl-1x.jpg,
+                        img/hero/hero-slide-1-xl-2x.jpg 2x
+                      " media="(min-width: 1441px)" type="image/jpeg">
+                  <source srcset="
+                        img/hero/hero-slide-1-lg-1x.webp,
+                        img/hero/hero-slide-1-lg-2x.webp 2x
+                      " media="(min-width: 600px)" type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-1-lg-1x.jpg,
+                        img/hero/hero-slide-1-lg-2x.jpg 2x
+                      " media="(min-width: 600px)" type="image/jpeg">
+                  <source srcset="
+                        img/hero/hero-slide-1-sm-1x.webp,
+                        img/hero/hero-slide-1-sm-2x.webp 2x
+                      " type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-1-sm-1x.jpg,
+                        img/hero/hero-slide-1-sm-2x.jpg 2x
+                      " type="image/jpeg">
+                  <img src="img/hero/hero-slide-1-lg-1x.jpg" alt="woman with a curly hair"
+                    srcset="img/hero/hero-slide-1-lg-2x.jpg 2x">
+                </picture>
+              </li>
+              <li class="splide__slide">
+                <picture>
+                  <source srcset="
+                        img/hero/hero-slide-2-xl-1x.webp,
+                        img/hero/hero-slide-2-xl-2x.webp 2x
+                      " media="(min-width: 1441px)" type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-2-xl-1x.jpg,
+                        img/hero/hero-slide-2-xl-2x.jpg 2x
+                      " media="(min-width: 1441px)" type="image/jpeg">
+                  <source srcset="
+                        img/hero/hero-slide-2-lg-1x.webp,
+                        img/hero/hero-slide-2-lg-2x.webp 2x
+                      " media="(min-width: 600px)" type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-2-lg-1x.jpg,
+                        img/hero/hero-slide-2-lg-2x.jpg 2x
+                      " media="(min-width: 600px)" type="image/jpeg">
+                  <source srcset="
+                        img/hero/hero-slide-2-sm-1x.webp,
+                        img/hero/hero-slide-2-sm-2x.webp 2x
+                      " type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-2-sm-1x.jpg,
+                        img/hero/hero-slide-2-sm-2x.jpg 2x
+                      " type="image/jpeg">
+                  <img src="img/hero/hero-slide-2-lg-1x.jpg" alt="woman with a curly hair"
+                    srcset="img/hero/hero-slide-2-lg-2x.jpg 2x">
+                </picture>
+              </li>
+              <li class="splide__slide">
+                <picture>
+                  <source srcset="
+                        img/hero/hero-slide-3-xl-1x.webp,
+                        img/hero/hero-slide-3-xl-2x.webp 2x
+                      " media="(min-width: 1441px)" type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-3-xl-1x.jpg,
+                        img/hero/hero-slide-3-xl-2x.jpg 2x
+                      " media="(min-width: 1441px)" type="image/jpeg">
+                  <source srcset="
+                        img/hero/hero-slide-3-lg-1x.webp,
+                        img/hero/hero-slide-3-lg-2x.webp 2x
+                      " media="(min-width: 600px)" type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-3-lg-1x.jpg,
+                        img/hero/hero-slide-3-lg-2x.jpg 2x
+                      " media="(min-width: 600px)" type="image/jpeg">
+                  <source srcset="
+                        img/hero/hero-slide-3-sm-1x.webp,
+                        img/hero/hero-slide-3-sm-2x.webp 2x
+                      " type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-3-sm-1x.jpg,
+                        img/hero/hero-slide-3-sm-2x.jpg 2x
+                      " type="image/jpeg">
+                  <img src="img/hero/hero-slide-3-lg-1x.jpg" alt="a group of four women"
+                    srcset="img/hero/hero-slide-3-lg-2x.jpg 2x">
+                </picture>
+              </li>
+              <li class="splide__slide">
+                <picture>
+                  <source srcset="
+                        img/hero/hero-slide-4-xl-1x.webp,
+                        img/hero/hero-slide-4-xl-2x.webp 2x
+                      " media="(min-width: 1441px)" type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-4-xl-1x.jpg,
+                        img/hero/hero-slide-4-xl-2x.jpg 2x
+                      " media="(min-width: 1441px)" type="image/jpeg">
+                  <source srcset="
+                        img/hero/hero-slide-4-lg-1x.webp,
+                        img/hero/hero-slide-4-lg-2x.webp 2x
+                      " media="(min-width: 600px)" type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-4-lg-1x.jpg,
+                        img/hero/hero-slide-4-lg-2x.jpg 2x
+                      " media="(min-width: 600px)" type="image/jpeg">
+                  <source srcset="
+                        img/hero/hero-slide-4-sm-1x.webp,
+                        img/hero/hero-slide-4-sm-2x.webp 2x
+                      " type="image/webp">
+                  <source srcset="
+                        img/hero/hero-slide-4-sm-1x.jpg,
+                        img/hero/hero-slide-4-sm-2x.jpg 2x
+                      " type="image/jpeg">
+                  <img src="img/hero/hero-slide-4-lg-1x.jpg" alt="a man and woman are smiling"
+                    srcset="img/hero/hero-slide-4-lg-2x.jpg 2x">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="organic section-padding">
+      <div class="container">
+        <h2 class="page-title">Organic line</h2>
+        <ul class="organic__list">
+          <li class="organic__item">
+            <a href="#acne-care">
+              <div class="organic__thumbnail">
+                <picture>
+                  <source srcset="
+                        img/organic/acne-care-lg-1x.webp,
+                        img/organic/acne-care-lg-2x.webp 2x
+                      " media="(min-width: 600px)" type="image/webp">
+                  <source srcset="
+                        img/organic/acne-care-lg-1x.jpg,
+                        img/organic/acne-care-lg-2x.jpg 2x
+                      " media="(min-width: 600px)" type="image/jpeg">
+                  <source srcset="
+                        img/organic/acne-care-sm-1x.webp,
+                        img/organic/acne-care-sm-2x.webp 2x
+                      " type="image/webp">
+                  <source srcset="
+                        img/organic/acne-care-sm-1x.jpg,
+                        img/organic/acne-care-sm-2x.jpg 2x
+                      " type="image/jpeg">
+                  <img src="img/organic/acne-care-lg-1x.jpg" alt="acne care"
+                    srcset="img/organic/acne-care-lg-2x.jpg 2x">
+                </picture>
+              </div>
+              <p class="organic__title">Acne care</p>
+            </a>
+          </li>
+          <li class="organic__item">
+            <a href="#hair-care">
+              <div class="organic__thumbnail">
+                <picture>
+                  <source srcset="
+                        img/organic/hair-care-lg-1x.webp,
+                        img/organic/hair-care-lg-2x.webp 2x
+                      " media="(min-width: 600px)" type="image/webp">
+                  <source srcset="
+                        img/organic/hair-care-lg-1x.jpg,
+                        img/organic/hair-care-lg-2x.jpg 2x
+                      " media="(min-width: 600px)" type="image/jpeg">
+                  <source srcset="
+                        img/organic/hair-care-sm-1x.webp,
+                        img/organic/hair-care-sm-2x.webp 2x
+                      " type="image/webp">
+                  <source srcset="
+                        img/organic/hair-care-sm-1x.jpg,
+                        img/organic/hair-care-sm-2x.jpg 2x
+                      " type="image/jpeg">
+                  <img src="img/organic/hair-care-lg-1x.jpg" alt="hair care"
+                    srcset="img/organic/hair-care-lg-2x.jpg 2x">
+                </picture>
+              </div>
+              <p class="organic__title">Hair care</p>
+            </a>
+          </li>
+          <li class="organic__item">
+            <a href="#skin-care">
+              <div class="organic__thumbnail">
+                <picture>
+                  <source srcset="
+                        img/organic/skin-care-lg-1x.webp,
+                        img/organic/skin-care-lg-2x.webp 2x
+                      " media="(min-width: 600px)" type="image/webp">
+                  <source srcset="
+                        img/organic/skin-care-lg-1x.jpg,
+                        img/organic/skin-care-lg-2x.jpg 2x
+                      " media="(min-width: 600px)" type="image/jpeg">
+                  <source srcset="
+                        img/organic/skin-care-sm-1x.webp,
+                        img/organic/skin-care-sm-2x.webp 2x
+                      " type="image/webp">
+                  <source srcset="
+                        img/organic/skin-care-sm-1x.jpg,
+                        img/organic/skin-care-sm-2x.jpg 2x
+                      " type="image/jpeg">
+                  <img src="img/organic/skin-care-lg-1x.jpg" alt="skin care"
+                    srcset="img/organic/skin-care-lg-2x.jpg 2x">
+                </picture>
+              </div>
+              <p class="organic__title">Skin care</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="highlights">
+      <div class="container">
+        <div class="highlights__body">
+          <ol class="highlights__list">
+            <li class="highlights__item">
+              High quality formulations: no synthetic components and
+              petrochemicals
+            </li>
+            <li class="highlights__item">
+              The effectiveness of the products is tested in theory and
+              practice
+            </li>
+            <li class="highlights__item">
+              Minimalism and calm color palette. Aluminum, glass and
+              recyclable plastic jars
+            </li>
+            <li class="highlights__item">
+              The effectiveness of the products is tested in theory and
+              practice
+            </li>
+            <li class="highlights__item">
+              Minimalism and calm color palette. Aluminum, glass and
+              recyclable plastic jars
+            </li>
+          </ol>
+          <div class="highlights__image">
+            <picture>
+              <source srcset="
+                    img/highlights/highlights-lg-1x.webp,
+                    img/highlights/highlights-lg-2x.webp 2x
+                  " media="(min-width: 600px)" type="image/webp">
+              <source srcset="
+                    img/highlights/highlights-lg-1x.jpg,
+                    img/highlights/highlights-lg-2x.jpg 2x
+                  " media="(min-width: 600px)" type="image/jpeg">
+              <source srcset="
+                    img/highlights/highlights-sm-1x.webp,
+                    img/highlights/highlights-sm-2x.webp 2x
+                  " type="image/webp">
+              <source srcset="
+                    img/highlights/highlights-sm-1x.jpg,
+                    img/highlights/highlights-sm-2x.jpg 2x
+                  " type="image/jpeg">
+              <img src="img/highlights/highlights-lg-1x.jpg" alt="acne care"
+                srcset="img/highlights/highlights-lg-2x.jpg 2x">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="tips section-padding">
+      <div class="container">
+        <h2 class="page-title">Beauty tips</h2>
+        <ul class="blog-list">
+          <li class="blog-list__item">
+            <a href="#!">
+              <div class="blog-list__image">
+                <img src="img/tips/beauty-tips.jpg" alt="">
+              </div>
+              <p class="blog-list__date">January 22, 2021</p>
+              <h3 class="blog-list__title">
+                Stop Word: Suspicious Cosmetic Ingredients
+              </h3>
+              <p class="blog-list__text">
+                In today's world of endless supply, the idea of ​​conscious
+                choice has...
+                <img src="img/icons/icon-read-more.svg" alt="icon arrow">
+              </p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#!">
+              <div class="blog-list__image">
+                <img src="img/tips/beauty-tips.jpg" alt="">
+              </div>
+              <p class="blog-list__date">January 22, 2021</p>
+              <h3 class="blog-list__title">
+                Stop Word: Suspicious Cosmetic Ingredients
+              </h3>
+              <p class="blog-list__text">
+                In today's world of endless supply, the idea of ​​conscious
+                choice has...
+                <img src="img/icons/icon-read-more.svg" alt="icon arrow">
+              </p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#!">
+              <div class="blog-list__image">
+                <img src="img/tips/beauty-tips.jpg" alt="">
+              </div>
+              <p class="blog-list__date">January 22, 2021</p>
+              <h3 class="blog-list__title">
+                Stop Word: Suspicious Cosmetic Ingredients
+              </h3>
+              <p class="blog-list__text">
+                In today's world of endless supply, the idea of ​​conscious
+                choice has...
+                <img src="img/icons/icon-read-more.svg" alt="icon arrow">
+              </p>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a href="#!">
+              <div class="blog-list__image">
+                <img src="img/tips/beauty-tips.jpg" alt="">
+              </div>
+              <p class="blog-list__date">January 22, 2021</p>
+              <h3 class="blog-list__title">
+                Stop Word: Suspicious Cosmetic Ingredients
+              </h3>
+              <p class="blog-list__text">
+                In today's world of endless supply, the idea of ​​conscious
+                choice has...
+                <img src="img/icons/icon-read-more.svg" alt="icon arrow">
+              </p>
+            </a>
+          </li>
+        </ul>
+        <div class="tips__btn">
+          <a href="#beauty-tips" class="btn btn--black btn--mobile">Read more</a>
+        </div>
+      </div>
+    </section>
+    <section class="feedback section-padding">
+      <div class="container">
+        <h2 class="page-title">What they say about us</h2>
+        <div class="splide feedback__slider">
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <img src="img/icons/icon-slider-left.svg" class="inject-me" alt="icon arrow left">
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <img src="img/icons/icon-slider-right.svg" class="inject-me" alt="icon arrow right">
+            </button>
+          </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="review-card review-card--white-bg">
+                  <div class="review-card__avatar">
+                    <img src="img/reviews/avatar-1x.png" alt="reviewer's avatar" srcset="img/reviews/avatar-2x.png 2x">
+                  </div>
+                  <div class="review-card__body">
+                    <div class="review-card__icon review-card__icon--left">
+                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
+                    </div>
+                    <div class="review-card__icon review-card__icon--right">
+                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
+                    </div>
+                    <p class="review-card__date">January 22, 2021</p>
+                    <p class="review-card__text">
+                      Now I have completely switched to your products. I
+                      noticed that with the beginning of the use of creams,
+                      the skin of the face began to breathe. Gone are the
+                      unpleasant moments. Shampoos and hair oils have shown
+                      results in the restoration of colored hair
+                    </p>
+                    <p class="review-card__author">Julia Rven</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="review-card review-card--white-bg">
+                  <div class="review-card__avatar">
+                    <img src="img/reviews/avatar-1x.png" alt="reviewer's avatar" srcset="img/reviews/avatar-2x.png 2x">
+                  </div>
+                  <div class="review-card__body">
+                    <div class="review-card__icon review-card__icon--left">
+                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
+                    </div>
+                    <div class="review-card__icon review-card__icon--right">
+                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
+                    </div>
+                    <p class="review-card__date">January 22, 2021</p>
+                    <p class="review-card__text">
+                      Now I have completely switched to your products. I
+                      noticed that with the beginning of the use of creams,
+                      the skin of the face began to breathe. Gone are the
+                      unpleasant moments. Shampoos and hair oils have shown
+                      results in the restoration of colored hair
+                    </p>
+                    <p class="review-card__author">Julia Rven</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="review-card review-card--white-bg">
+                  <div class="review-card__avatar">
+                    <img src="img/reviews/avatar-1x.png" alt="reviewer's avatar" srcset="img/reviews/avatar-2x.png 2x">
+                  </div>
+                  <div class="review-card__body">
+                    <div class="review-card__icon review-card__icon--left">
+                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
+                    </div>
+                    <div class="review-card__icon review-card__icon--right">
+                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
+                    </div>
+                    <p class="review-card__date">January 22, 2021</p>
+                    <p class="review-card__text">
+                      Now I have completely switched to your products. I
+                      noticed that with the beginning of the use of creams,
+                      the skin of the face began to breathe. Gone are the
+                      unpleasant moments. Shampoos and hair oils have shown
+                      results in the restoration of colored hair
+                    </p>
+                    <p class="review-card__author">Julia Rven</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="review-card review-card--white-bg">
+                  <div class="review-card__avatar">
+                    <img src="img/reviews/avatar-1x.png" alt="reviewer's avatar" srcset="img/reviews/avatar-2x.png 2x">
+                  </div>
+                  <div class="review-card__body">
+                    <div class="review-card__icon review-card__icon--left">
+                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
+                    </div>
+                    <div class="review-card__icon review-card__icon--right">
+                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
+                    </div>
+                    <p class="review-card__date">January 22, 2021</p>
+                    <p class="review-card__text">
+                      Now I have completely switched to your products. I
+                      noticed that with the beginning of the use of creams,
+                      the skin of the face began to breathe. Gone are the
+                      unpleasant moments. Shampoos and hair oils have shown
+                      results in the restoration of colored hair
+                    </p>
+                    <p class="review-card__author">Julia Rven</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="feedback__btn">
+          <a href="#reviews" class="btn btn--black btn--mobile">View all</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact section-padding" id="contact">
+      <div class="container">
+        <div class="contact__body">
+          <div class="contact__image">
+            <picture>
+              <source srcset="
+                    img/contact/contact-lg-1x.webp,
+                    img/contact/contact-lg-2x.webp 2x
+                  " media="(min-width: 600px)" type="image/webp">
+              <source srcset="
+                    img/contact/contact-lg-1x.jpg,
+                    img/contact/contact-lg-2x.jpg 2x
+                  " media="(min-width: 600px)" type="image/jpeg">
+              <source srcset="
+                    img/contact/contact-sm-1x.webp,
+                    img/contact/contact-sm-2x.webp 2x
+                  " type="image/webp">
+              <source srcset="
+                    img/contact/contact-sm-1x.jpg,
+                    img/contact/contact-sm-2x.jpg 2x
+                  " type="image/jpeg">
+              <img src="img/contact/contact-lg-1x.jpg" alt="acne care" srcset="img/contact/contact-lg-2x.jpg 2x">
+            </picture>
+          </div>
+          <div class="contact__info">
+            <h2 class="page-title">
+              Have questions or want to discuss cooperation?
+            </h2>
+            <div class="wrapper">
+              <p class="contact__text">
+                Write to us - and we will help you form the task and tell you
+                about the process.
+              </p>
+              <form action="#!">
+                <ul class="contact__form" role="none">
+                  <li class="contact__input">
+                    <label for="name" class="screen-reader">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name *" required>
+                  </li>
+                  <li class="contact__input">
+                    <label for="phone" class="screen-reader">Telephone</label>
+                    <input type="tel" class="error" id="phone" name="tel" placeholder="Telephone *" required>
+                  </li>
+                  <li class="contact__input">
+                    <label for="email" class="screen-reader">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email *" required>
+                  </li>
+                </ul>
+                <p class="contact__policy">
+                  By clicking on the "send" button, I agree to the processing
+                  of personal data in accordance with the
+                  <a href="#privacy-policy">Privacy Policy</a>
+                </p>
+                <button type="submit" class="btn btn--black btn--mobile">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="contact-popup popup">
+      <div class="contact-popup__backdrop"></div>
+      <div class="contact-popup__body">
+        <button type="button" class="close">
+          <img src="img/icons/icon-close.svg" class="inject-me" alt="close icon">
+        </button>
+        <div class="contact-popup__icon">
+          <img src="img/icons/icon-success.svg" alt="icon success">
+        </div>
+        <p class="contact-popup__text">
+          You have successfully submitted your application.<br>A manager
+          will contact you shortly.
+        </p>
+      </div>
+    </div>
+    <div class="cookie">
+      <div class="container">
+        <div class="cookie__body">
+          <p class="info">
+            By using this website, you agree to our use of cookies. We use
+            cookies to provide you with a great experience and to help our
+            website run effectively.
+          </p>
+          <button type="button" class="close btn btn--brown btn--mobile">Ok</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- @import "footer.html" -->
+  <script src="js/libs/svg-injector.js"></script>
+  <script src="js/libs/splide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

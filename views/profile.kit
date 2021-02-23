@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a {
+      color: #f5f0ec;
+    }
+  </style>
+</head>
+
+<body tabIndex="0">
+  <!-- @import "header.html" -->
+  <main>
+    <section class="profile page-padding">
+      <div class="container">
+        <h1 class="page-title">Profile</h1>
+        <div class="profile__body">
+          <nav class="profile__nav">
+            <ul class="profile__links">
+              <li class="profile__link">
+                <span>Profile</span>
+              </li>
+              <li class="profile__link">
+                <a href="#orders">Orders</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="profile__form">
+            <form action="#!" class="form">
+              <ul class="form__inputs" role="none">
+                <li class="form__input">
+                  <label for="profile_username">Username</label>
+                  <div class="input">
+                    <input type="text" id="profile_username" name="profile_username" placeholder="julia_rven">
+                  </div>
+                </li>
+                <li class="form__input">
+                  <label for="profile_name">Full name</label>
+                  <div class="input">
+                    <input type="text" id="profile_name" name="profile_name" placeholder="Julia Rven">
+                  </div>
+                </li>
+                <li class="form__input">
+                  <label for="profile_email">Email</label>
+                  <div class="input">
+                    <input type="email" id="profile_email" name="profile_email" placeholder="info@gmail.com">
+                  </div>
+                </li>
+                <li class="form__input">
+                  <label for="profile_phone">Telephone</label>
+                  <div class="input">
+                    <input type="tel" id="profile_phone" name="profile_phone" placeholder="+7 921 336 04 23">
+                  </div>
+                </li>
+                <li class="form__input">
+                  <label for="profile_password">Password</label>
+                  <div class="input">
+                    <input type="password" id="profile_password" name="profile_password"
+                      placeholder="......................">
+                    <button type="button" class="password-icon">
+                      <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
+                      <img src="img/icons/icon-password-hide.svg" class="hidden inject-me" alt="icon show password">
+                    </button>
+                  </div>
+                </li>
+                <li class="form__input">
+                  <label for="profile_password_confirm">Confirm password</label>
+                  <div class="input">
+                    <input type="password" id="profile_password_confirm" name="profile_password_confirm"
+                      placeholder="......................">
+                    <button type="button" class="password-icon">
+                      <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
+                      <img src="img/icons/icon-password-hide.svg" class="hidden inject-me" alt="icon show password">
+                    </button>
+                  </div>
+                </li>
+              </ul>
+              <div class="form__buttons">
+                <button type="submit" class="btn btn--brown">Save</button>
+                <!--Reset form inputs-->
+                <button type="button" class="btn btn--black">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- @import "footer.html" -->
+  <script src="js/libs/svg-injector.js"></script>
+  <script src="js/libs/splide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

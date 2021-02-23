@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>B2B</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a {
+      color: #f5f0ec;
+    }
+  </style>
+</head>
+
+<body tabIndex="0">
+<header class="header">
+  <div class="header__announcement">
+    <span class="shipping">Free shipping over $35</span>
+  </div>
+  <div class="container">
+    <div class="header__body">
+      <button class="header__burger" type="button" aria-label="Menu" aria-controls="navigation">
+        <div class="menu-switcher"></div>
+      </button>
+      <a href="#home" class="header__logo" aria-hidden="true" tabindex="-1">
+        <img src="img/logo.svg" alt="Safisa">
+      </a>
+      <nav class="header__nav">
+        <div class="currency-dropdown">
+          <form action="#" class="currency">
+            <div class="currency__wrapper has-dropdown">
+              <button type="button" class="currency__option">usd ($)</button>
+              <div class="arrow"></div>
+              <ul class="currency__list visually-hidden">
+                <li class="currency__item">
+                  <button class="currency__select" type="button" name="CAD">
+                    cad (C$)
+                  </button>
+                </li>
+                <li class="currency__item">
+                  <button class="currency__select" type="button" name="GBP">
+                    gbp (£)
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+        <ul class="site-menu">
+          <li class="site-menu__item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="site-menu__item has-dropdown">
+            <button>Shop</button>
+            <div class="arrow"></div>
+            <ul class="site-menu__sub-list visually-hidden">
+              <li class="site-menu__sub-item">
+                <a href="#acne-care">Acne care</a>
+              </li>
+              <li class="site-menu__sub-item">
+                <a href="#hair-care">Hair care</a>
+              </li>
+              <li class="site-menu__sub-item">
+                <a href="#skin-care">Skin care</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-menu__item">
+            <a href="#about-us">About us</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="#beauty-tips">Beauty tips</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="#reviews">Reviews</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="#B2B">B2B</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__user">
+        <div class="profile has-dropdown active">
+          <button>My profile</button>
+          <ul class="profile__list visually-hidden">
+            <li class="profile__item">
+              <a href="#profile">Profile</a>
+            </li>
+            <li class="profile__item">
+              <a href="#orders">Orders</a>
+            </li>
+            <li class="profile__item">
+              <button type="button" class="logout">Sign out of account</button>
+            </li>
+          </ul>
+        </div>
+        <a href="#sign-in" class="account hidden">Sign in</a>
+        <a href="#cart" class="cart">
+          <span class="label">Cart</span>
+          <div class="value">0</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>  <main>
+    <section class="b2b">
+      <div class="container">
+        <h1 class="page-title">B2B</h1>
+        <p class="b2b__notification">Coming soon May 2021</p>
+      </div>
+    </section>
+    <section class="contact contact--b2b section-padding">
+      <div class="container">
+        <div class="contact__body">
+          <div class="contact__image">
+            <picture>
+              <source srcset="
+                    img/contact/contact-lg-1x.webp,
+                    img/contact/contact-lg-2x.webp 2x
+                  " media="(min-width: 600px)" type="image/webp">
+              <source srcset="
+                    img/contact/contact-lg-1x.jpg,
+                    img/contact/contact-lg-2x.jpg 2x
+                  " media="(min-width: 600px)" type="image/jpeg">
+              <source srcset="
+                    img/contact/contact-sm-1x.webp,
+                    img/contact/contact-sm-2x.webp 2x
+                  " type="image/webp">
+              <source srcset="
+                    img/contact/contact-sm-1x.jpg,
+                    img/contact/contact-sm-2x.jpg 2x
+                  " type="image/jpeg">
+              <img src="img/contact/contact-lg-1x.jpg" alt="acne care" srcset="img/contact/contact-lg-2x.jpg 2x">
+            </picture>
+          </div>
+          <div class="contact__info">
+            <h2 class="page-title">
+              Have questions or want to discuss cooperation?
+            </h2>
+            <div class="wrapper">
+              <p class="contact__text">
+                Write to us - and we will help you form the task and tell you
+                about the process.
+              </p>
+              <form action="#!">
+                <ul class="contact__form" role="none">
+                  <li class="contact__input">
+                    <label for="name" class="screen-reader">Name</label>
+                    <input type="text" name="name" placeholder="Name *" required>
+                  </li>
+                  <li class="contact__input">
+                    <label for="phone" class="screen-reader">Telephone</label>
+                    <input type="tel" class="error" name="tel" placeholder="Telephone *" required>
+                  </li>
+                  <li class="contact__input">
+                    <label for="email" class="screen-reader">Email</label>
+                    <input type="email" name="email" placeholder="email *" required>
+                  </li>
+                </ul>
+                <p class="contact__policy">
+                  By clicking on the "send" button, I agree to the processing
+                  of personal data in accordance with the
+                  <a href="#privacy-policy">Privacy Policy</a>
+                </p>
+                <button type="submit" class="btn btn--black btn--mobile">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="contact-popup popup">
+      <div class="contact-popup__backdrop"></div>
+      <div class="contact-popup__body">
+        <button type="button" class="close">
+          <img src="img/icons/icon-close.svg" class="inject-me" alt="close icon">
+        </button>
+        <div class="contact-popup__icon">
+          <img src="img/icons/icon-success.svg" alt="icon success">
+        </div>
+        <p class="contact-popup__text">
+          You have successfully submitted your application.<br>A manager
+          will contact you shortly.
+        </p>
+      </div>
+    </div>
+  </main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__body">
+      <small class="footer__brand">&copy; 2015 SAFISA</small>
+      <nav class="footer__nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#contacts">Contacts</a>
+          </li>
+          <li class="menu__item">
+            <a href="#payment">Payment</a>
+          </li>
+          <li class="menu__item">
+            <a href="#delivery">Delivery</a>
+          </li>
+          <li class="menu__item">
+            <a href="#return">Return</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#home" class="footer__logo" aria-hidden="true" tabindex="-1">
+        <img src="img/logo.svg" alt="Safisa">
+      </a>
+      <ul class="footer__links">
+        <li class="footer__link">
+          <a href="#policy">Privacy Policy</a>
+        </li>
+        <li class="footer__link">
+          <a href="#instagram">Site creation</a>
+        </li>
+      </ul>
+      <ul class="footer__socials">
+        <li class="footer__social">
+          <a href="#facebook">
+            <img src="img/icons/icon-facebook.svg" class="inject-me" alt="facebook icon">
+          </a>
+        </li>
+        <li class="footer__social">
+          <a href="#instagram">
+            <img src="img/icons/icon-instagram.svg" class="inject-me" alt="instagram icon">
+          </a>
+        </li>
+        <li class="footer__social">
+          <a href="#pinterest">
+            <img src="img/icons/icon-pinterest.svg" class="inject-me" alt="pinterest icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>  <script src="js/libs/svg-injector.js"></script>
+  <script src="js/libs/splide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

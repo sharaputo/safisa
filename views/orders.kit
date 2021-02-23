@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Orders</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a {
+      color: #f5f0ec;
+    }
+  </style>
+</head>
+
+<body tabIndex="0">
+  <!-- @import "header.html" -->
+  <main>
+    <section class="orders profile page-padding">
+      <div class="container">
+        <h1 class="page-title">Orders</h1>
+        <div class="profile__body">
+          <nav class="profile__nav">
+            <ul class="profile__links">
+              <li class="profile__link">
+                <a href="#profile">Profile</a>
+              </li>
+              <li class="profile__link">
+                <span>Orders</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="orders__table table">
+            <ul class="table__headers">
+              <li class="table__header">Goods</li>
+              <li class="table__header">Total</li>
+              <li class="table__header">Status</li>
+              <li class="table__header">Order date</li>
+              <li class="table__header">Delivery date</li>
+              <li class="table__header">Order number</li>
+              <li class="table__header">Tracking number</li>
+            </ul>
+            <p class="notification hidden">No orders</p>
+            <ul class="table__items">
+              <li class="table__item">
+                <div class="cell image">
+                  <img src="img/product-face-cream-1.jpg" alt="">
+                </div>
+                <span class="cell price">$ 160.00</span>
+                <span class="cell status">Submitted</span>
+                <span class="cell order-date">05.02.2021</span>
+                <span class="cell delivery-date">10.02.2021</span>
+                <span class="cell order-number">476502291</span>
+                <span class="cell tracking-number">476502291</span>
+              </li>
+              <li class="table__item">
+                <div class="cell image">
+                  <img src="img/product-face-cream-1.jpg" alt="">
+                </div>
+                <span class="cell price">$ 160.00</span>
+                <span class="cell status">Submitted</span>
+                <span class="cell order-date">05.02.2021</span>
+                <span class="cell delivery-date">10.02.2021</span>
+                <span class="cell order-number">476502291</span>
+                <span class="cell tracking-number">476502291</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- @import "footer.html" -->
+  <script src="js/libs/svg-injector.js"></script>
+  <script src="js/libs/splide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
