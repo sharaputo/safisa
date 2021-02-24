@@ -35,16 +35,16 @@
         <div class="currency-dropdown">
           <form action="#" class="currency">
             <div class="currency__wrapper has-dropdown">
-              <button type="button" class="currency__option">usd ($)</button>
+              <button aria-label="currency us dollar" type="button" class="currency__option">usd ($)</button>
               <div class="arrow"></div>
               <ul class="currency__list visually-hidden">
                 <li class="currency__item">
-                  <button class="currency__select" type="button" name="CAD">
+                  <button aria-label="currency canadian dollar" class="currency__select" type="button" name="CAD">
                     cad (C$)
                   </button>
                 </li>
                 <li class="currency__item">
-                  <button class="currency__select" type="button" name="GBP">
+                  <button aria-label="currency uk pound" class="currency__select" type="button" name="GBP">
                     gbp (£)
                   </button>
                 </li>
@@ -57,7 +57,7 @@
             <a href="#home">Home</a>
           </li>
           <li class="site-menu__item has-dropdown">
-            <button>Shop</button>
+            <button aria-label="submenus for product pages">Shop</button>
             <div class="arrow"></div>
             <ul class="site-menu__sub-list visually-hidden">
               <li class="site-menu__sub-item">
@@ -87,7 +87,7 @@
       </nav>
       <div class="header__user">
         <div class="profile has-dropdown active">
-          <button>My profile</button>
+          <button aria-label="submenus for profile pages">My profile</button>
           <ul class="profile__list visually-hidden">
             <li class="profile__item">
               <a href="#profile">Profile</a>
@@ -463,10 +463,10 @@
         <h2 class="page-title">What they say about us</h2>
         <div class="splide feedback__slider">
           <div class="splide__arrows">
-            <button class="splide__arrow splide__arrow--prev">
+            <button aria-label="previous slide button" class="splide__arrow splide__arrow--prev">
               <img src="img/icons/icon-slider-left.svg" class="inject-me" alt="icon arrow left">
             </button>
-            <button class="splide__arrow splide__arrow--next">
+            <button aria-label="next slide button" class="splide__arrow splide__arrow--next">
               <img src="img/icons/icon-slider-right.svg" class="inject-me" alt="icon arrow right">
             </button>
           </div>
@@ -478,12 +478,6 @@
                     <img src="img/reviews/avatar-1x.png" alt="reviewer's avatar" srcset="img/reviews/avatar-2x.png 2x">
                   </div>
                   <div class="review-card__body">
-                    <div class="review-card__icon review-card__icon--left">
-                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
-                    </div>
-                    <div class="review-card__icon review-card__icon--right">
-                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
-                    </div>
                     <p class="review-card__date">January 22, 2021</p>
                     <p class="review-card__text">
                       Now I have completely switched to your products. I
@@ -502,12 +496,6 @@
                     <img src="img/reviews/avatar-1x.png" alt="reviewer's avatar" srcset="img/reviews/avatar-2x.png 2x">
                   </div>
                   <div class="review-card__body">
-                    <div class="review-card__icon review-card__icon--left">
-                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
-                    </div>
-                    <div class="review-card__icon review-card__icon--right">
-                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
-                    </div>
                     <p class="review-card__date">January 22, 2021</p>
                     <p class="review-card__text">
                       Now I have completely switched to your products. I
@@ -526,12 +514,6 @@
                     <img src="img/reviews/avatar-1x.png" alt="reviewer's avatar" srcset="img/reviews/avatar-2x.png 2x">
                   </div>
                   <div class="review-card__body">
-                    <div class="review-card__icon review-card__icon--left">
-                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
-                    </div>
-                    <div class="review-card__icon review-card__icon--right">
-                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
-                    </div>
                     <p class="review-card__date">January 22, 2021</p>
                     <p class="review-card__text">
                       Now I have completely switched to your products. I
@@ -550,12 +532,6 @@
                     <img src="img/reviews/avatar-1x.png" alt="reviewer's avatar" srcset="img/reviews/avatar-2x.png 2x">
                   </div>
                   <div class="review-card__body">
-                    <div class="review-card__icon review-card__icon--left">
-                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
-                    </div>
-                    <div class="review-card__icon review-card__icon--right">
-                      <img src="img/icons/icon-quote.svg" alt="icon inverted commas">
-                    </div>
                     <p class="review-card__date">January 22, 2021</p>
                     <p class="review-card__text">
                       Now I have completely switched to your products. I
@@ -641,10 +617,10 @@
     <div class="contact-popup popup">
       <div class="contact-popup__backdrop"></div>
       <div class="contact-popup__body">
-        <button type="button" class="close">
+        <button aria-label="close modal popup" type="button" class="close">
           <img src="img/icons/icon-close.svg" class="inject-me" alt="close icon">
         </button>
-        <div class="contact-popup__icon">
+        <div aria-hidden="true" class="contact-popup__icon">
           <img src="img/icons/icon-success.svg" alt="icon success">
         </div>
         <p class="contact-popup__text">
@@ -661,7 +637,7 @@
             cookies to provide you with a great experience and to help our
             website run effectively.
           </p>
-          <button type="button" class="close btn btn--brown btn--mobile">Ok</button>
+          <button aria-label="accept cookies" type="button" class="close btn btn--brown btn--mobile">Ok</button>
         </div>
       </div>
     </div>

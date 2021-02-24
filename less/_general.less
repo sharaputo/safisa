@@ -481,17 +481,26 @@ a {
     position: relative;
     text-align: center;
     z-index: 1;
-  }
-  &__icon {
-    max-width: 29px;
-    position: absolute;
-    &--left {
+    &::before,
+    &::after {
+      display: block;
+      width: 29px;
+      height: 18px;
+      position: absolute;
+      content: '';
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &::before {
       top: -13px;
       left: 0;
+      background-image: url('../img/icons/icon-quote-left.svg');
     }
-    &--right {
+    &::after {
       right: 0;
       bottom: 20px;
+      background-image: url('../img/icons/icon-quote-right.svg');
     }
   }
   &__date {
