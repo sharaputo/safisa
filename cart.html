@@ -138,18 +138,18 @@
               </div>
               <div class="table__data items-counter quantity hidden">
                 <div class="items-counter__form">
-                  <button type="button" id="count_up" class="counter">
+                  <button aria-label="remove item form cart" type="button" id="count_up" class="counter">
                     -
                   </button>
                   <input type="text" name="quantity" class="input" value="1" inputmode="numeric">
-                  <button type="button" id="count_down" class="counter">
+                  <button aria-label="add item to cart" type="button" id="count_down" class="counter">
                     +
                   </button>
                 </div>
               </div>
               <div class="table__data price">
                 <div class="amount">
-                  <button type="button" class="return active">Return</button>
+                  <button aria-label="return item to cart" type="button" class="return active">Return</button>
                   <span class="value hidden">$ 60.00</span>
                   <button aria-label="remove item from cart" type="button" class="remove">
                     <img src="img/icons/icon-remove.svg" alt="icon remove">
@@ -168,9 +168,13 @@
               </div>
               <div class="table__data items-counter quantity">
                 <div class="items-counter__form">
-                  <button type="button" class="counter counter--down">-</button>
-                  <input type="text" name="quantity" class="input input--qty" value="1" inputmode="numeric">
-                  <button type="button" class="counter counter--up">+</button>
+                  <button aria-label="remove item form cart" type="button" id="count_up" class="counter">
+                    -
+                  </button>
+                  <input type="text" name="quantity" class="input" value="1" inputmode="numeric">
+                  <button aria-label="add item to cart" type="button" id="count_down" class="counter">
+                    +
+                  </button>
                 </div>
               </div>
               <div class="table__data price">
