@@ -724,23 +724,29 @@
 }
 .highlights {
   background: @pale;
+  .page-title {
+    text-align: left;
+    margin-bottom: 40px;
+  }
   &__body {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  &__list {
+  &__info {
     flex: 0 0 auto;
     width: 100%;
     max-width: 480px;
+    padding: 30px 0;
+    margin-right: 30px;
+  }
+  &__list {
     list-style: none;
     counter-reset: steps;
-    padding: 20px 0;
-    margin-right: 30px;
   }
   &__item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     counter-increment: steps;
     font-size: 2rem;
     line-height: 1.3;

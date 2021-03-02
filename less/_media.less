@@ -65,7 +65,7 @@
     }
   }
   .highlights {
-    &__list {
+    &__info {
       flex: 1 1 40%;
       max-width: 40%;
     }
@@ -86,11 +86,6 @@
     }
     &__info {
       max-width: 100%;
-    }
-  }
-  .highlights {
-    &__item {
-      align-items: flex-start;
     }
   }
 }
@@ -533,11 +528,14 @@
   }
   .highlights {
     padding: 40px 0;
+    .page-title {
+      text-align: center;
+    }
     &__body {
       flex-direction: column;
       justify-content: center;
     }
-    &__list {
+    &__info {
       max-width: 70%;
       padding: 0;
       margin-right: 0;
@@ -726,6 +724,11 @@
     }
     &__logo {
       margin-bottom: 60px;
+    }
+  }
+  .highlights {
+    .page-title {
+      margin-bottom: 30px;
     }
   }
   .items-counter {
@@ -1057,7 +1060,7 @@
     }
   }
   .highlights {
-    &__list {
+    &__info {
       max-width: 100%;
     }
     &__image {
