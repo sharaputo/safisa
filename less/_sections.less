@@ -696,30 +696,32 @@
   }
 }
 .hero {
-  display: grid;
-  grid-template-areas: 'hero';
-  place-items: center;
   padding-top: 104px;
-  &__body {
-    position: relative;
-    max-width: 400px;
-    width: 100%;
-    grid-area: hero;
-    text-align: center;
-    z-index: 2;
-  }
-  &__title {
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: @white;
-    margin-bottom: 15px;
+  .splide {
+    &__slide {
+      position: relative;
+    }
+    &__info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 2;
+    }
   }
   &__logo {
-    margin-bottom: 40px;
+    max-width: 325px;
+    margin-right: auto;
+    margin-bottom: 35px;
+    margin-left: auto;
   }
-  &__bg {
-    width: 100%;
-    grid-area: hero;
+  &__title {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: @white;
+    margin-bottom: 35px;
   }
 }
 .highlights {
