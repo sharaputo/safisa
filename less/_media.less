@@ -525,6 +525,14 @@
   }
   .hero {
     padding-top: 102px;
+    &__logo {
+      max-width: 300px;
+      margin-bottom: 25px;
+    }
+    &__title {
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+    }
   }
   .highlights {
     padding: 40px 0;
@@ -716,14 +724,18 @@
     }
   }
   .hero {
-    &__body {
-      max-width: 260px;
-    }
-    &__title {
-      margin-bottom: 30px;
+    .splide {
+      &__info {
+        padding: 0 15px;
+      }
     }
     &__logo {
-      margin-bottom: 60px;
+      max-width: 260px;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
   }
   .highlights {
@@ -1051,12 +1063,6 @@
         margin-right: 0;
         margin-bottom: 20px;
       }
-    }
-  }
-  .hero {
-    &__body {
-      align-self: start;
-      padding-top: 24vh;
     }
   }
   .highlights {
