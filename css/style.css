@@ -1153,11 +1153,13 @@ and make it occupy the whole card using ::after like in the example: */
   color: #a48b77;
 }
 .header__user .cart {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
   line-height: 1.2;
   color: #ffffff;
+  z-index: 6;
 }
 .header__user .cart .label {
   flex: 0 0 auto;
