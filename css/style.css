@@ -537,6 +537,9 @@ a {
 .cookie__body .close {
   text-transform: uppercase;
 }
+.cookie.hidden {
+  display: none;
+}
 .flex-video {
   height: 0;
   overflow: hidden;

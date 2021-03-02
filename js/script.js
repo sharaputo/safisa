@@ -174,3 +174,15 @@ for (let i = 0; i < closePopups.length; i++) {
     });
   }
 }
+
+// Cookie close
+const cookie = document.querySelector('#cookies');
+
+if (cookie) {
+  const cookieBtn = document.querySelector('#cookie_close');
+  cookieBtn.addEventListener('click', hideCookie);
+
+  function hideCookie() {
+    cookie.classList.add('hidden');
+  }
+}
