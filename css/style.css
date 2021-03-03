@@ -1159,7 +1159,7 @@ a {
   margin-left: 20px;
 }
 /* Sections Styles */
-.about .page-title {
+.about__title {
   margin-bottom: 40px;
 }
 .about__info {
@@ -1210,7 +1210,7 @@ a {
 .article .breadcrumbs {
   margin-bottom: 40px;
 }
-.article .page-title {
+.article__title {
   text-align: left;
   margin-bottom: 15px;
 }
@@ -1245,9 +1245,9 @@ a {
   margin-bottom: 30px;
 }
 .b2b {
-  padding-top: 192px;
+  padding-top: 194px;
 }
-.b2b .page-title {
+.b2b__title {
   margin-bottom: 40px;
 }
 .b2b__notification {
@@ -1255,7 +1255,7 @@ a {
   color: #2f2e2e;
   text-align: center;
 }
-.blog .page-title {
+.blog__title {
   margin-bottom: 40px;
 }
 .blog__btn {
@@ -1308,7 +1308,10 @@ a {
   vertical-align: middle;
   padding-bottom: 2px;
 }
-.checkout .page-title {
+.category {
+  padding-top: 194px;
+}
+.checkout__title {
   text-align: left;
   margin-bottom: 40px;
 }
@@ -1588,7 +1591,7 @@ a {
 .contact {
   padding-top: 201px;
 }
-.contact .page-title {
+.contact__title {
   max-width: 530px;
   text-align: left;
   margin-top: -115px;
@@ -1674,7 +1677,7 @@ a {
 .contacts {
   padding-top: 104px;
 }
-.contacts .page-title {
+.contacts__title {
   text-align: left;
   margin-bottom: 40px;
 }
@@ -1733,7 +1736,7 @@ a {
 .contacts__social + .contacts__social {
   margin-left: 15px;
 }
-.delivery .page-title {
+.delivery__title {
   margin-bottom: 40px;
 }
 .delivery .subtitle {
@@ -1788,7 +1791,7 @@ a {
 .feedback {
   background: #f5f0ec;
 }
-.feedback .page-title {
+.feedback__title {
   margin-bottom: 40px;
 }
 .feedback__slider {
@@ -1856,7 +1859,7 @@ a {
 .highlights {
   background: #f5f0ec;
 }
-.highlights .page-title {
+.highlights__title {
   text-align: left;
   margin-bottom: 40px;
 }
@@ -1905,6 +1908,9 @@ a {
   flex: 0 1 55%;
   width: 100%;
   max-width: 55%;
+}
+.orders__title {
+  margin-bottom: 40px;
 }
 .orders .profile__nav {
   margin-right: 0;
@@ -1961,7 +1967,7 @@ a {
 .orders .table__item + .table__item {
   margin-top: 30px;
 }
-.organic .page-title {
+.organic__title {
   margin-bottom: 40px;
 }
 .organic__list {
@@ -1982,12 +1988,12 @@ a {
 .organic__thumbnail img {
   transition: transform 0.3s ease-in-out;
 }
-.organic__title {
+.organic__caption {
   font-size: 2rem;
   font-weight: 500;
   color: #2f2e2e;
 }
-.password-recovery .page-title {
+.password-recovery__title {
   margin-bottom: 40px;
 }
 .password-recovery__body {
@@ -2212,7 +2218,7 @@ a {
   color: #2f2e2e;
   margin-bottom: 20px;
 }
-.profile .page-title {
+.profile__title {
   margin-bottom: 40px;
 }
 .profile__body {
@@ -2274,9 +2280,7 @@ a {
   background: #f5f0ec;
 }
 .recommendation__title {
-  font-size: 3.6rem;
-  font-weight: 300;
-  color: #2f2e2e;
+  text-align: left;
   margin-bottom: 40px;
 }
 .recommendation__list {
@@ -2310,7 +2314,7 @@ a {
   font-weight: 700;
   color: #2f2e2e;
 }
-.reviews-page .page-title {
+.reviews-page__title {
   margin-bottom: 85px;
 }
 .reviews-page__list {
@@ -2319,7 +2323,7 @@ a {
   column-gap: 30px;
   row-gap: 80px;
 }
-.shopping-cart .page-title {
+.shopping-cart__title {
   text-align: left;
   margin-bottom: 40px;
 }
@@ -2493,8 +2497,8 @@ a {
   color: #2f2e2e;
   margin-bottom: 20px;
 }
-.sign-in .page-title,
-.sign-up .page-title {
+.sign-in__title,
+.sign-up__title {
   margin-bottom: 40px;
 }
 .sign-in__body,
@@ -2539,7 +2543,7 @@ a {
   color: #2f2e2e;
   margin-bottom: 40px;
 }
-.tips .page-title {
+.tips__title {
   margin-bottom: 40px;
 }
 .tips__btn {
@@ -2756,10 +2760,10 @@ a {
     max-width: 100%;
     padding: 20px;
   }
-  .contact .page-title {
+  .contact__title {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
   .contact__body {
     flex-direction: column-reverse;
@@ -3146,16 +3150,16 @@ a {
   }
 }
 @media only screen and (max-width: 767px) {
-  .about .page-title {
+  .about__title {
     margin-bottom: 25px;
   }
   .article__body h2 {
     font-size: 1.8rem;
   }
-  .b2b .page-title {
+  .b2b__title {
     margin-bottom: 25px;
   }
-  .blog .page-title {
+  .blog__title {
     margin-bottom: 25px;
   }
   .blog-list {
@@ -3175,7 +3179,7 @@ a {
   .buyers__nav .menu__item {
     padding-bottom: 15px;
   }
-  .checkout .page-title {
+  .checkout__title {
     margin-bottom: 30px;
   }
   .checkout__form .checkout-form .inputs {
@@ -3223,13 +3227,16 @@ a {
     margin-top: 25px;
     margin-bottom: 15px;
   }
-  .contacts .page-title {
+  .contact__title {
+    margin-bottom: 25px;
+  }
+  .contacts__title {
     margin-bottom: 30px;
   }
   .container {
     padding: 0 15px;
   }
-  .delivery .page-title {
+  .delivery__title {
     margin-bottom: 30px;
   }
   .delivery .info--general {
@@ -3244,7 +3251,7 @@ a {
   .error-404 .notification {
     font-size: 3rem;
   }
-  .feedback .page-title {
+  .feedback__title {
     margin-bottom: 30px;
   }
   .hero .splide__info {
@@ -3258,7 +3265,7 @@ a {
     font-size: 2rem;
     margin-bottom: 20px;
   }
-  .highlights .page-title {
+  .highlights__title {
     margin-bottom: 30px;
   }
   .items-counter__form {
@@ -3271,6 +3278,9 @@ a {
   .items-counter__form .input {
     font-size: 2.5rem;
     padding: 17px 0;
+  }
+  .orders__title {
+    margin-bottom: 30px;
   }
   .orders .table .notification {
     padding-left: 0;
@@ -3288,7 +3298,7 @@ a {
   .orders .table__item .cell {
     min-width: 130px;
   }
-  .organic .page-title {
+  .organic__title {
     margin-bottom: 30px;
   }
   .organic__list {
@@ -3303,14 +3313,14 @@ a {
   .organic__thumbnail {
     margin-bottom: 15px;
   }
-  .organic__title {
+  .organic__caption {
     font-size: 1.8rem;
     text-align: center;
   }
   .page-title {
     font-size: 3rem;
   }
-  .password-recovery .page-title {
+  .password-recovery__title {
     margin-bottom: 30px;
   }
   .password-recovery__body .notification {
@@ -3386,7 +3396,7 @@ a {
   .product .cart-popup .heading {
     font-size: 1.8rem;
   }
-  .profile .page-title {
+  .profile__title {
     margin-bottom: 30px;
   }
   .profile__body {
@@ -3415,7 +3425,7 @@ a {
     padding: 40px 0 60px;
   }
   .recommendation__title {
-    font-size: 3rem;
+    text-align: center;
     margin-bottom: 25px;
   }
   .recommendation__list {
@@ -3441,8 +3451,11 @@ a {
   .review-card__author {
     font-size: 1.8rem;
   }
-  .reviews-page .page-title {
+  .reviews-page__title {
     margin-bottom: 70px;
+  }
+  .shopping-cart__title {
+    margin-bottom: 35px;
   }
   .shopping-cart__table .table__headers .quantity,
   .shopping-cart__table .table__content .quantity {
@@ -3476,15 +3489,15 @@ a {
     margin-top: 25px;
     margin-bottom: 40px;
   }
-  .sign-in .page-title,
-  .sign-up .page-title {
+  .sign-in__title,
+  .sign-up__title {
     margin-bottom: 30px;
   }
   .sign-in__body,
   .sign-up__body {
     max-width: 375px;
   }
-  .tips .page-title {
+  .tips__title {
     margin-bottom: 25px;
   }
   .tips__btn {
