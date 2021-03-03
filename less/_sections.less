@@ -159,6 +159,7 @@
 }
 .category {
   padding-top: 194px;
+  padding-bottom: 90px;
   &__title {
     display: block;
     margin-bottom: 40px;
@@ -166,9 +167,8 @@
   &__nav {
     margin-bottom: 40px;
   }
-  &__products {
-  }
-  &__product {
+  &__product + &__product {
+    margin-top: 40px;
   }
   .product-item {
     display: flex;
@@ -198,8 +198,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &__item {
-    }
     &__link {
       font-size: 1.8rem;
       font-weight: 400;
@@ -220,7 +218,6 @@
     margin-left: 20px;
   }
 }
-
 .checkout {
   &__title {
     text-align: left;
