@@ -1255,6 +1255,68 @@ a {
   color: #2f2e2e;
   text-align: center;
 }
+.benefits {
+  padding: 90px 0;
+  background-color: #f5f0ec;
+}
+.benefits__card {
+  display: flex;
+  align-items: center;
+}
+.benefits__card + .benefits__card {
+  margin-top: 40px;
+}
+.benefits__card--reversed {
+  flex-direction: row-reverse;
+}
+.benefits__content {
+  flex: 0 1 50%;
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefits__info {
+  max-width: 410px;
+  padding: 0 20px;
+}
+.benefits__title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #2f2e2e;
+  margin-bottom: 20px;
+}
+.benefits__text {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #2f2e2e;
+}
+.benefits__image {
+  position: relative;
+  flex: 0 1 50%;
+  width: 100%;
+  max-width: 50%;
+  text-align: right;
+}
+.benefits__image--reversed {
+  text-align: left;
+}
+.benefits__image .background {
+  max-width: 472px;
+}
+.benefits__image .positioned {
+  max-width: 345px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.benefits__image .positioned--reversed {
+  left: unset;
+  right: 10%;
+}
 .blog__title {
   margin-bottom: 40px;
 }
@@ -2784,6 +2846,36 @@ a {
   .b2b {
     padding-top: 143px;
   }
+  .benefits {
+    padding: 40px 0 60px;
+  }
+  .benefits__card {
+    display: block;
+  }
+  .benefits__content {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .benefits__info {
+    padding: 0;
+  }
+  .benefits__title {
+    font-size: 1.8rem;
+  }
+  .benefits__image {
+    max-width: 100%;
+    text-align: center;
+  }
+  .benefits__image--reversed {
+    text-align: center;
+  }
+  .benefits__image .positioned {
+    left: 30px;
+  }
+  .benefits__image .positioned--reversed {
+    left: unset;
+    right: 30px;
+  }
   .blog__btn {
     display: none;
   }
@@ -3596,6 +3688,15 @@ a {
   }
 }
 @media only screen and (max-width: 600px) {
+  .benefits__image .background {
+    display: none;
+  }
+  .benefits__image .positioned {
+    position: static;
+    transform: translateY(0);
+    max-width: 410px;
+    margin: 0 auto;
+  }
   .blog-list {
     display: block;
   }

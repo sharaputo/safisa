@@ -124,6 +124,36 @@
   .b2b {
     padding-top: 143px;
   }
+  .benefits {
+    padding: 40px 0 60px;
+    &__card {
+      display: block;
+    }
+    &__content {
+      max-width: 100%;
+      margin-bottom: 25px;
+    }
+    &__info {
+      padding: 0;
+    }
+    &__title {
+      font-size: 1.8rem;
+    }
+    &__image {
+      max-width: 100%;
+      text-align: center;
+      &--reversed {
+        text-align: center;
+      }
+      .positioned {
+        left: 30px;
+        &--reversed {
+          left: unset;
+          right: 30px;
+        }
+      }
+    }
+  }
   .blog {
     &__btn {
       display: none;
@@ -1073,6 +1103,19 @@
   }
 }
 @media @xs {
+  .benefits {
+    &__image {
+      .background {
+        display: none;
+      }
+      .positioned {
+        position: static;
+        transform: translateY(0);
+        max-width: 410px;
+        margin: 0 auto;
+      }
+    }
+  }
   .blog-list {
     display: block;
     &__item {
