@@ -432,7 +432,7 @@ a {
   border-bottom-color: #2f2e2e;
 }
 .buyers__nav .menu__item a,
-.buyers__nav .menu__item h1 {
+.buyers__nav .menu__item span {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.3;
@@ -440,7 +440,7 @@ a {
 .buyers__nav .menu__item a {
   color: #8d8d8d;
 }
-.buyers__nav .menu__item h1 {
+.buyers__nav .menu__item span {
   color: #2f2e2e;
 }
 .contact-popup {
