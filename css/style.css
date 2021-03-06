@@ -50,11 +50,9 @@ abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-  -webkit-text-decoration-skip-ink: none;
-  text-decoration-skip-ink: none;
 }
 address {
   margin-bottom: 0;
@@ -157,9 +155,8 @@ fieldset {
 }
 img {
   max-width: 100%;
-  width: 100%;
   height: auto;
-  vertical-align: top;
+  vertical-align: middle;
   border-style: none;
 }
 input,
@@ -182,9 +179,8 @@ input[type='submit'],
 input[type='tel'],
 input[type='text'],
 textarea {
-  appearance: none;
-  -moz-appearance: none;
   -webkit-appearance: none;
+          appearance: none;
   border-radius: 0;
 }
 input[type='checkbox'],
