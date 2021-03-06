@@ -41,7 +41,7 @@
                   <span class="label">You have removed</span>
                   <span class="value">Face cream</span>
                 </div>
-                <a href="#!" class="product-link hidden">
+                <a href="#!" class="product-link hidden" aria-label="item link">
                   <div class="image">
                     <img src="img/cart-item.jpg" alt="">
                   </div>
@@ -50,20 +50,22 @@
               </div>
               <div class="table__data items-counter quantity hidden">
                 <div class="items-counter__form">
-                  <button aria-labelledby="remove item form cart" type="button" id="count_up" class="counter">
+                  <button type="button" class="counter counter--down" aria-label="remove item form cart">
                     -
                   </button>
                   <input type="text" name="quantity" class="input" value="1" inputmode="numeric">
-                  <button aria-labelledby="add item to cart" type="button" id="count_down" class="counter">
+                  <button type="button" class="counter counter--up" aria-label="add item to cart">
                     +
                   </button>
                 </div>
               </div>
               <div class="table__data price">
                 <div class="amount">
-                  <button aria-labelledby="return item to cart" type="button" class="return active">Return</button>
+                  <button type="button" class="return active" aria-label="return item to cart">
+                    Return
+                  </button>
                   <span class="value hidden">$ 60.00</span>
-                  <button aria-label="remove item from cart" type="button" class="remove">
+                  <button type="button" class="remove" aria-label="remove item from cart">
                     <img src="img/icons/icon-remove.svg" alt="icon remove">
                   </button>
                 </div>
@@ -71,7 +73,7 @@
             </div>
             <div class="table__content">
               <div class="table__data item">
-                <a href="#!" class="product-link">
+                <a href="#!" class="product-link" aria-label="item link">
                   <div class="image">
                     <img src="img/cart-item.jpg" alt="">
                   </div>
@@ -80,11 +82,11 @@
               </div>
               <div class="table__data items-counter quantity">
                 <div class="items-counter__form">
-                  <button aria-labelledby="remove item form cart" type="button" id="count_up" class="counter">
+                  <button type="button" class="counter counter--down" aria-label="remove item form cart">
                     -
                   </button>
                   <input type="text" name="quantity" class="input" value="1" inputmode="numeric">
-                  <button aria-labelledby="add item to cart" type="button" id="count_down" class="counter">
+                  <button type="button" class="counter counter--up" aria-label="add item to cart">
                     +
                   </button>
                 </div>
@@ -92,7 +94,7 @@
               <div class="table__data price">
                 <div class="amount">
                   <span class="value">$ 60.00</span>
-                  <button aria-label="remove item from cart" type="button" class="remove">
+                  <button type="button" class="remove" aria-label="remove item from cart">
                     <img src="img/icons/icon-remove.svg" alt="icon remove">
                   </button>
                 </div>
@@ -103,9 +105,7 @@
               <span class="value">$ 120.00</span>
             </div>
             <div class="checkout">
-              <button type="submit" class="btn btn--black btn--mobile">
-                Checkout
-              </button>
+              <button type="submit" class="btn btn--black btn--mobile">Checkout</button>
             </div>
           </div>
         </form>
