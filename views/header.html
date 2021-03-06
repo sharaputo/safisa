@@ -4,7 +4,7 @@
   </div>
   <div class="container">
     <div class="header__body">
-      <button class="header__burger" type="button" aria-label="Menu" aria-controls="navigation">
+      <button class="header__burger" type="button" aria-label="menu" aria-controls="navigation">
         <span class="menu-switcher"></span>
       </button>
       <a href="#home" class="header__logo" aria-hidden="true" tabindex="-1">
@@ -14,16 +14,16 @@
         <div class="currency-dropdown">
           <form action="#" class="currency">
             <div class="currency__wrapper has-dropdown">
-              <button aria-label="currency us dollar" type="button" class="currency__option">usd ($)</button>
+              <button type="button" class="currency__option" aria-labelledby="currency us dollar">usd ($)</button>
               <div class="arrow"></div>
-              <ul class="currency__list visually-hidden">
-                <li class="currency__item">
-                  <button aria-label="currency canadian dollar" class="currency__select" type="button" name="CAD">
+              <ul class="currency__list visually-hidden" role="currency choice">
+                <li class="currency__item" role="none">
+                  <button type="button" class="currency__select" name="CAD" aria-labelledby="currency canadian dollar">
                     cad (C$)
                   </button>
                 </li>
-                <li class="currency__item">
-                  <button aria-label="currency uk pound" class="currency__select" type="button" name="GBP">
+                <li class="currency__item" role="none">
+                  <button type="button" class="currency__select" name="GBP" aria-labelledby="currency uk pound">
                     gbp (£)
                   </button>
                 </li>
@@ -31,50 +31,50 @@
             </div>
           </form>
         </div>
-        <ul class="site-menu">
-          <li class="site-menu__item">
-            <a href="#home">Home</a>
+        <ul class="site-menu" role="menubar">
+          <li class="site-menu__item" role="none">
+            <a href="#home" role="menuitem">Home</a>
           </li>
-          <li class="site-menu__item has-dropdown">
+          <li class="site-menu__item has-dropdown" role="none">
             <button aria-label="submenus for product pages">Shop</button>
             <div class="arrow"></div>
-            <ul class="site-menu__sub-list visually-hidden">
-              <li class="site-menu__sub-item">
-                <a href="#acne-care">Acne care</a>
+            <ul class="site-menu__sub-list visually-hidden" role="menu">
+              <li class="site-menu__sub-item" role="none">
+                <a href="#acne-care" role="menuitem">Acne care</a>
               </li>
-              <li class="site-menu__sub-item">
-                <a href="#hair-care">Hair care</a>
+              <li class="site-menu__sub-item" role="none">
+                <a href="#hair-care" role="menuitem">Hair care</a>
               </li>
-              <li class="site-menu__sub-item">
-                <a href="#skin-care">Skin care</a>
+              <li class="site-menu__sub-item" role="none">
+                <a href="#skin-care" role="menuitem">Skin care</a>
               </li>
             </ul>
           </li>
-          <li class="site-menu__item">
-            <a href="#about-us">About us</a>
+          <li class="site-menu__item" role="none">
+            <a href="#about-us" role="menuitem">About us</a>
           </li>
-          <li class="site-menu__item">
-            <a href="#beauty-tips">Beauty tips</a>
+          <li class="site-menu__item" role="none">
+            <a href="#beauty-tips" role="menuitem">Beauty tips</a>
           </li>
-          <li class="site-menu__item">
-            <a href="#reviews">Reviews</a>
+          <li class="site-menu__item" role="none">
+            <a href="#reviews" role="menuitem">Reviews</a>
           </li>
-          <li class="site-menu__item">
-            <a href="#B2B">B2B</a>
+          <li class="site-menu__item" role="none">
+            <a href="#B2B" role="menuitem">B2B</a>
           </li>
         </ul>
       </nav>
       <div class="header__user">
         <div class="profile has-dropdown active">
           <button aria-label="submenus for profile pages">My profile</button>
-          <ul class="profile__list visually-hidden">
-            <li class="profile__item">
-              <a href="#profile">Profile</a>
+          <ul class="profile__list visually-hidden" role="profile menu">
+            <li class="profile__item" role="none">
+              <a href="#profile" role="profile menuitem">Profile</a>
             </li>
-            <li class="profile__item">
-              <a href="#orders">Orders</a>
+            <li class="profile__item" role="none">
+              <a href="#orders" role="profile menuitem">Orders</a>
             </li>
-            <li class="profile__item">
+            <li class="profile__item" role="none">
               <button type="button" class="logout">Sign out of account</button>
             </li>
           </ul>
