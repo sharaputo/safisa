@@ -111,14 +111,16 @@
 </header>  <main>
     <section class="product not-in-stock">
       <div class="container">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a href="#acne-care">Acne care</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <span>Face cream</span>
-          </li>
-        </ul>
+        <nav class="breadcrumbs" aria-label="breadcrumb">
+          <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="#acne-care">Acne care</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#face-cream" aria-current="page">Face cream</a>
+            </li>
+          </ol>
+        </nav>
         <div class="product__body">
           <div class="splide thumbnails">
             <div class="splide__track">
@@ -216,7 +218,7 @@
     <section class="recommendation">
       <div class="container">
         <h2 class="page-title recommendation__title">You may also like</h2>
-        <ul class="recommendation__list">
+        <ul class="recommendation__list" role="none">
           <li class="recommendation__item">
             <a href="#!">
               <div class="thumbnail">
@@ -281,18 +283,18 @@
       </ul>
       <ul class="footer__socials" role="none">
         <li class="footer__social">
-          <a href="#facebook" aria-label="facebook">
-            <img src="img/icons/icon-facebook.svg" class="inject-me" alt="facebook icon">
+          <a href="#facebook">
+            <img src="img/icons/icon-facebook.svg" class="inject-me" alt="facebook link">
           </a>
         </li>
         <li class="footer__social">
-          <a href="#instagram" aria-label="instagram">
-            <img src="img/icons/icon-instagram.svg" class="inject-me" alt="instagram icon">
+          <a href="#instagram">
+            <img src="img/icons/icon-instagram.svg" class="inject-me" alt="instagram link">
           </a>
         </li>
         <li class="footer__social">
-          <a href="#pinterest" aria-label="pinterest">
-            <img src="img/icons/icon-pinterest.svg" class="inject-me" alt="pinterest icon">
+          <a href="#pinterest">
+            <img src="img/icons/icon-pinterest.svg" class="inject-me" alt="pinterest link">
           </a>
         </li>
       </ul>

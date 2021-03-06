@@ -25,13 +25,13 @@
       <div class="container">
         <h1 class="page-title profile__title">Profile</h1>
         <div class="profile__body">
-          <nav class="profile__nav">
-            <ul class="profile__links" role="menu">
-              <li class="profile__link" role="none">
-                <span>Profile</span>
+          <nav class="profile__nav" aria-label="breadcrumb">
+            <ul class="profile__links">
+              <li class="profile__link">
+                <a href="#profile" aria-current="page">Profile</a>
               </li>
-              <li class="profile__link" role="none">
-                <a href="#orders" role="menuitem">Orders</a>
+              <li class="profile__link">
+                <a href="#orders">Orders</a>
               </li>
             </ul>
           </nav>
@@ -61,9 +61,9 @@
                   <div class="input">
                     <input type="password" id="profile_password" name="profile_password"
                       placeholder="......................">
-                    <button aria-label="show password" type="button" class="password-icon">
+                    <button aria-label="show password" type="button" class="password-toggle">
                       <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
-                      <img src="img/icons/icon-password-hide.svg" class="hidden inject-me" alt="icon hide password">
+                      <img src="img/icons/icon-password-hide.svg" class="inject-me hidden" alt="icon hide password">
                     </button>
                   </div>
                 </li>
@@ -72,9 +72,9 @@
                   <div class="input">
                     <input type="password" id="profile_password_confirm" name="profile_password_confirm"
                       placeholder="......................">
-                    <button aria-label="show password" type="button" class="password-icon">
+                    <button type="button" class="password-toggle" aria-label="show password">
                       <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
-                      <img src="img/icons/icon-password-hide.svg" class="hidden inject-me" alt="icon hide password">
+                      <img src="img/icons/icon-password-hide.svg" class="inject-me hidden" alt="icon hide password">
                     </button>
                   </div>
                 </li>

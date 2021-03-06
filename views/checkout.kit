@@ -23,14 +23,16 @@
   <main>
     <section class="checkout page-padding">
       <div class="container">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a href="#cart">Cart</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <span>Checkout</span>
-          </li>
-        </ul>
+        <nav class="breadcrumbs" aria-label="breadcrumb">
+          <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="#cart">Cart</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#checkout" aria-current="page">Checkout</a>
+            </li>
+          </ol>
+        </nav>
         <h1 class="page-title checkout__title">Checkout</h1>
         <div class="checkout__body">
           <div class="checkout__form">
@@ -139,9 +141,7 @@
                     <a href="#privacy-policy">Privacy Policy</a>
                   </label>
                 </div>
-                <button type="submit" class="btn btn--black btn--mobile">
-                  Proceed to checkout
-                </button>
+                <button type="submit" class="btn btn--black btn--mobile">Proceed to checkout</button>
               </div>
             </form>
           </div>

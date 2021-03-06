@@ -23,19 +23,21 @@
   <main>
     <section class="category">
       <div class="container">
-        <span class="page-title category__title">Shop</span>
-        <ul class="nav category__nav">
-          <li class="nav__item">
-            <h1 class="nav__link nav__link--active">Acne care</h1>
-          </li>
-          <li class="nav__item">
-            <a href="#hair-care" class="nav__link">Hair care</a>
-          </li>
-          <li class="nav__item">
-            <a href="#skin-care" class="nav__link">Skin care</a>
-          </li>
-        </ul>
-        <ul class="category__products">
+        <h1 class="page-title category__title">Shop</h1>
+        <nav class="category__nav" aria-label="breadcrumb">
+          <ol class="nav">
+            <li class="nav__item">
+              <a href="#acne-care" class="nav__link nav__link--active" aria-current="page">Acne care</a>
+            </li>
+            <li class="nav__item">
+              <a href="#hair-care" class="nav__link" role="menuitem">Hair care</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skin-care" class="nav__link" role="menuitem">Skin care</a>
+            </li>
+          </ol>
+        </nav>
+        <ul class="category__products" role="none">
           <li class="product-item category__product">
             <div class="product-item__image">
               <img src="img/product-sample.jpg" alt="">
@@ -61,7 +63,7 @@
     </section>
     <section class="benefits">
       <div class="container">
-        <ul class="benefits__cards">
+        <ul class="benefits__cards" role="none">
           <li class="benefits__card">
             <div class="benefits__content">
               <div class="benefits__info">
