@@ -2686,22 +2686,6 @@ a {
   color: #ffffff;
   margin-right: 4.8vw;
 }
-.footer__nav .menu {
-  display: flex;
-}
-.footer__nav .menu__item a {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #ffffff;
-}
-.footer__nav .menu__item a:hover,
-.footer__nav .menu__item a:focus {
-  color: #a48b77;
-}
-.footer__nav .menu__item + .menu__item {
-  margin-left: 1.4vw;
-}
 .footer__logo {
   flex: 0 0 97px;
   width: 100%;
@@ -2712,16 +2696,6 @@ a {
 .footer__links {
   display: flex;
   margin-right: 4.8vw;
-}
-.footer__link a {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #ffffff;
-}
-.footer__link a:hover,
-.footer__link a:focus {
-  color: #a48b77;
 }
 .footer__link + .footer__link {
   margin-left: 2.4vw;
@@ -2748,6 +2722,22 @@ a {
 }
 .footer__social + .footer__social {
   margin-left: 1vw;
+}
+.footer .footer-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.footer .footer-link:hover,
+.footer .footer-link:focus {
+  color: #a48b77;
+}
+.footer .menu {
+  display: flex;
+}
+.footer .menu__item + .menu__item {
+  margin-left: 1.4vw;
 }
 /* Media Styles */
 @media only screen and (min-width: 1441px) {

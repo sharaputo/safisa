@@ -12,26 +12,6 @@
     color: @white;
     margin-right: 4.8vw;
   }
-  &__nav {
-    .menu {
-      display: flex;
-      &__item {
-        a {
-          font-size: 1.5rem;
-          font-weight: 500;
-          line-height: 1.2;
-          color: @white;
-          &:hover,
-          &:focus {
-            color: @brown;
-          }
-        }
-      }
-    }
-    .menu__item + .menu__item {
-      margin-left: 1.4vw;
-    }
-  }
   &__logo {
     flex: 0 0 97px;
     width: 100%;
@@ -42,18 +22,6 @@
   &__links {
     display: flex;
     margin-right: 4.8vw;
-  }
-  &__link {
-    a {
-      font-size: 1.5rem;
-      font-weight: 500;
-      line-height: 1.2;
-      color: @white;
-      &:hover,
-      &:focus {
-        color: @brown;
-      }
-    }
   }
   &__link + &__link {
     margin-left: 2.4vw;
@@ -84,5 +52,21 @@
   }
   &__social + &__social {
     margin-left: 1vw;
+  }
+  .footer-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: @white;
+    &:hover,
+    &:focus {
+      color: @brown;
+    }
+  }
+  .menu {
+    display: flex;
+  }
+  .menu__item + .menu__item {
+    margin-left: 1.4vw;
   }
 }
