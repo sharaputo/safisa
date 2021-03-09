@@ -874,6 +874,7 @@ a {
   margin: 0;
 }
 .splide__slide img {
+  width: 100%;
   vertical-align: bottom;
 }
 .splide.is-active .splide__list {
