@@ -52,6 +52,12 @@ const headerMenu = document.querySelector('.header__nav');
 menuSwitcher.addEventListener('click', function () {
   this.classList.toggle('active');
   headerMenu.classList.toggle('active');
+
+  if (headerMenu.classList.contains('active')) {
+    bodyScrollLock.disableBodyScroll(headerMenu);
+  } else {
+    bodyScrollLock.enableBodyScroll(headerMenu);
+  }
 });
 
 // Hero slider
