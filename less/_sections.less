@@ -4,19 +4,20 @@
   }
   &__info {
     max-width: 1120px;
-    margin: 0 auto;
-    + .page-title {
-      margin-top: 90px;
-    }
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__info + &__title {
+    margin-top: 90px;
   }
   &__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     .info {
-      flex: 0 1 42%;
-      width: 100%;
-      max-width: 42%;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 42%;
     }
     .info + .image {
       margin-left: 30px;
@@ -29,9 +30,9 @@
       margin-top: 20px;
     }
     .image {
-      flex: 0 1 50%;
-      width: 100%;
-      max-width: 50%;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 50%;
     }
     &--reversed {
       flex-direction: row-reverse;
@@ -47,7 +48,7 @@
 }
 .article {
   padding-top: 140px;
-  .breadcrumbs {
+  &__breadcrumbs {
     margin-bottom: 40px;
   }
   &__title {
@@ -110,9 +111,9 @@
     }
   }
   &__content {
-    flex: 0 1 50%;
-    width: 100%;
-    max-width: 50%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,9 +136,9 @@
   }
   &__image {
     position: relative;
-    flex: 0 1 50%;
-    width: 100%;
-    max-width: 50%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
     text-align: right;
     &--reversed {
       text-align: left;
@@ -173,9 +174,9 @@
   justify-content: space-between;
   margin: -20px -15px;
   &__item {
-    flex: 1 1 25%;
-    width: 100%;
-    max-width: 25%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 25%;
     padding: 20px 15px;
     a {
       &:hover,
@@ -192,6 +193,7 @@
     overflow: hidden;
     margin-bottom: 20px;
     img {
+      width: 100%;
       transition: transform @transition;
     }
   }
@@ -299,9 +301,9 @@
     display: flex;
     align-items: center;
     &__image {
-      flex: 0 1 50%;
-      width: 100%;
-      max-width: 50%;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 50%;
       margin-right: 75px;
     }
     &__title {
@@ -356,8 +358,9 @@
     justify-content: space-between;
   }
   &__form {
-    flex: 1 1 45%;
-    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 45%;
     max-width: 640px;
     margin-right: 40px;
     .checkout-form {
@@ -422,9 +425,9 @@
         align-items: center;
         input {
           position: absolute;
-          flex: 0 0 20px;
-          width: 100%;
-          max-width: 20px;
+          flex-grow: 0;
+          flex-shrink: 0;
+          flex-basis: 20px;
           height: 20px;
           opacity: 0;
           border-radius: 10px;
@@ -484,9 +487,9 @@
         margin-bottom: 25px;
         input {
           position: absolute;
-          flex: 0 0 20px;
-          width: 100%;
-          max-width: 20px;
+          flex-grow: 0;
+          flex-shrink: 0;
+          flex-basis: 20px;
           height: 20px;
           opacity: 0;
           & + label {
@@ -539,9 +542,9 @@
     }
   }
   &__summary {
-    flex: 1 1 45%;
-    width: 100%;
-    max-width: 45%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 45%;
     padding: 30px;
     border: 1px solid @grey;
     border-radius: 5px;
@@ -559,13 +562,15 @@
       margin-top: 30px;
     }
     .image {
-      flex: 0 1 72px;
-      width: 100%;
-      max-width: 72px;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 72px;
+      height: 96px;
       margin-right: 35px;
     }
     .title {
-      flex: 1;
+      flex-grow: 1;
+      flex-shrink: 1;
       font-size: 1.6rem;
       line-height: 1.3;
       color: @black;
@@ -573,9 +578,9 @@
     }
     .price-details {
       align-self: flex-start;
-      flex: 0 0 90px;
-      width: 100%;
-      max-width: 90px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 90px;
       .price {
         display: block;
         font-size: 1.6rem;
@@ -648,15 +653,21 @@
     padding-left: 60px;
   }
   &__image {
-    flex: 1 1 auto;
-    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-basis: 472px;
     padding-bottom: 60px;
     margin-top: -111px;
     margin-right: 5.5vw;
+    img {
+      width: 100%;
+    }
   }
   &__info {
-    flex: 1 1 auto;
-    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
     max-width: 570px;
     padding-bottom: 60px;
   }
@@ -722,19 +733,22 @@
   }
 }
 .contacts {
+  height: 100%;
   padding-top: 104px;
   &__title {
     text-align: left;
     margin-bottom: 40px;
   }
   &__body {
+    height: 100%;
     display: flex;
     align-items: center;
   }
   &__image {
-    flex: 1 1 45%;
-    width: 100%;
-    max-width: 45%;
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 45%;
     margin-right: 6.4vw;
     img {
       width: auto;
@@ -765,9 +779,9 @@
     margin-bottom: 30px;
   }
   &__social {
-    flex: 0 0 30px;
-    width: 100%;
-    max-width: 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 30px;
     a {
       &:hover,
       &:focus {
@@ -925,8 +939,9 @@
     justify-content: space-between;
   }
   &__info {
-    flex: 0 0 auto;
-    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
     max-width: 480px;
     padding: 30px 0;
     margin-right: 30px;
@@ -961,9 +976,9 @@
     }
   }
   &__image {
-    flex: 0 1 55%;
-    width: 100%;
-    max-width: 55%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 55%;
   }
 }
 .orders {
@@ -974,7 +989,8 @@
     margin-right: 0;
   }
   .table {
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
     overflow-x: scroll;
     .notification {
       font-size: 1.4rem;
@@ -1016,6 +1032,7 @@
         min-width: 140px;
       }
       .image {
+        height: 96px;
         img {
           max-width: 72px;
         }
@@ -1092,7 +1109,8 @@
       &__buttons {
         display: flex;
         .btn {
-          flex: 1;
+          flex-grow: 1;
+          flex-shrink: 1;
         }
         .btn + .btn {
           margin-left: 15px;
@@ -1273,8 +1291,9 @@
     }
   }
   &__form {
-    flex: 1 1 auto;
-    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
     max-width: 365px;
     .form {
       label {
@@ -1525,9 +1544,9 @@
     margin-bottom: 20px;
   }
   &__social {
-    flex: 0 0 30px;
-    width: 100%;
-    max-width: 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 30px;
     & + & {
       margin-left: 15px;
     }

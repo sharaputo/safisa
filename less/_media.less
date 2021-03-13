@@ -92,15 +92,13 @@
 @media @md {
   .about {
     &__info {
-      + .page-title {
-        margin-top: 40px;
-      }
+      max-width: 600px;
+    }
+    &__info + &__title {
+      margin-top: 40px;
     }
     &__item {
       display: block;
-      .info {
-        max-width: 100%;
-      }
       .info + .image {
         margin-top: 20px;
         margin-left: 0;
@@ -109,7 +107,9 @@
         margin-top: 15px;
       }
       .image {
-        max-width: 100%;
+        img {
+          width: 100%;
+        }
       }
       &--reversed {
         .info + .image {
@@ -130,7 +130,6 @@
       display: block;
     }
     &__content {
-      max-width: 100%;
       margin-bottom: 25px;
     }
     &__info {
@@ -140,7 +139,6 @@
       font-size: 1.8rem;
     }
     &__image {
-      max-width: 100%;
       text-align: center;
       &--reversed {
         text-align: center;
@@ -160,10 +158,10 @@
     }
   }
   .blog-list {
+    justify-content: center;
     flex-wrap: wrap;
     &__item {
-      flex-basis: 50%;
-      max-width: 50%;
+      flex-basis: 40%;
     }
   }
   .category {
@@ -196,7 +194,6 @@
       }
     }
     &__summary {
-      max-width: 100%;
       padding: 20px;
     }
   }
@@ -207,9 +204,12 @@
       margin-bottom: 40px;
     }
     &__body {
+      max-width: 600px;
       flex-direction: column-reverse;
       background: @white;
       padding: 0;
+      margin-right: auto;
+      margin-left: auto;
     }
     &__image {
       padding-bottom: 0;
@@ -240,20 +240,27 @@
     &__body {
       flex-direction: column-reverse;
       align-items: flex-start;
+      align-items: center;
+    }
+    &__title {
+      text-align: center;
     }
     &__info {
-      flex: 1;
-      width: 100%;
+      text-align: center;
       padding: 0 15px;
       margin-bottom: 30px;
     }
     &__image {
-      max-width: 100%;
+      max-width: 600px;
+      width: 100%;
       margin-right: 0;
       img {
         width: 100%;
         height: auto;
       }
+    }
+    &__socials {
+      justify-content: center;
     }
     &__social {
       flex: 0 0 35px;
@@ -392,9 +399,9 @@
     }
     &__burger {
       display: block;
-      flex: 0 0 24px;
-      width: 100%;
-      max-width: 24px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 24px;
       height: 25px;
       padding: 5px 0;
       margin-right: 20px;
@@ -436,11 +443,8 @@
       }
     }
     &__logo {
-      flex: 0 0 76px;
-      width: 100%;
-      max-width: 76px;
+      flex-basis: 76px;
       display: flex;
-      align-items: center;
     }
     &__nav {
       position: fixed;
@@ -591,7 +595,7 @@
       }
     }
     &__image {
-      flex: 1 1 auto;
+      flex-basis: auto;
       max-width: 70%;
     }
   }
@@ -696,11 +700,10 @@
     }
   }
   .blog-list {
-    display: block;
-    margin: -15px 0;
+    margin: -15px -10px;
     &__item {
-      max-width: 100%;
-      padding: 15px 0;
+      flex-basis: 50%;
+      padding: 15px 10px;
     }
   }
   .breadcrumbs {
@@ -748,7 +751,6 @@
       display: block;
       text-align: center;
       &__image {
-        max-width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
       }
@@ -794,9 +796,8 @@
         margin-top: 25px;
       }
       .image {
-        flex: 0 1 51px;
-        width: 100%;
-        max-width: 51px;
+        flex-basis: 51px;
+        height: 68px;
         margin-right: 10px;
       }
       .title {
@@ -1120,15 +1121,12 @@
         position: static;
         transform: translateY(0);
         max-width: 410px;
-        margin: 0 auto;
+        width: 100%;
       }
     }
   }
   .blog-list {
     display: block;
-    &__item {
-      max-width: 100%;
-    }
   }
   .btn {
     &--mobile {
