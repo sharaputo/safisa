@@ -988,7 +988,6 @@ a {
 .header__announcement .shipping {
   font-size: 1.5rem;
   font-weight: 600;
-  font-feature-settings: 'pnum' on, 'lnum' on;
   text-transform: uppercase;
 }
 .header__body {
@@ -1001,13 +1000,16 @@ a {
   display: none;
 }
 .header__logo {
-  flex: 0 0 120px;
-  width: 100%;
-  max-width: 120px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 120px;
   margin-right: auto;
   z-index: 5;
 }
 .header__nav {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -1087,6 +1089,9 @@ a {
   color: #a48b77;
 }
 .header__user {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
   display: flex;
   align-items: center;
   z-index: 5;
@@ -1145,22 +1150,25 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  color: #ffffff;
   z-index: 6;
 }
 .header__user .cart .label {
-  flex: 0 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
   margin-right: 7px;
 }
 .header__user .cart .value {
-  flex: 1 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-feature-settings: 'pnum' on, 'lnum' on;
   color: #2f2e2e;
   background: #ffffff;
-  padding: 1px 5px;
   border-radius: 10px;
 }
 .header__user .account + .cart {

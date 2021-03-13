@@ -38,10 +38,14 @@ if (thumbnailSlider) {
 // Add to cart popup notification
 const addToCart = document.querySelector('#add_to_cart');
 const cartPopup = document.querySelector('#cart_popup');
+const cartCounter = document.querySelector('#cart_counter');
 
 addToCart.addEventListener('click', showPopup);
 
 function showPopup() {
+  let count = 0;
+  count++;
+  cartCounter.innerHTML = count;
   cartPopup.classList.add('active');
   getThumb();
   getTitle();
