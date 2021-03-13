@@ -782,6 +782,12 @@ a {
   color: #a48b77;
   margin-bottom: 15px;
 }
+.review-card__cat {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2f2e2e;
+  margin-bottom: 10px;
+}
 .review-card__text {
   max-width: 360px;
   font-size: 1.6rem;
@@ -2484,7 +2490,9 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
-  row-gap: 80px;
+}
+.reviews-page__review-card + .reviews-page__review-card {
+  margin-top: 85px;
 }
 .shopping-cart__title {
   text-align: left;
@@ -3377,7 +3385,7 @@ a {
   .reviews-page__list {
     grid-template-columns: 1fr;
     justify-items: center;
-    row-gap: 70px;
+    row-gap: 85px;
   }
   .section-padding {
     padding: 40px 0;
