@@ -599,6 +599,58 @@
     padding-top: 143px;
     padding-bottom: 60px;
   }
+  .product {
+    &__body {
+      display: block;
+      max-width: 600px;
+      margin-right: auto;
+      margin-left: auto;
+      .thumbnails {
+        max-width: 100%;
+        margin-right: 0;
+      }
+      .control {
+        display: block;
+        margin-bottom: 40px;
+      }
+      .thumbnails + .control {
+        margin-top: 5px;
+      }
+      .thumbnail + .thumbnail {
+        margin-top: 0;
+      }
+      .info {
+        position: static;
+        max-width: 100%;
+        padding-bottom: 40px;
+      }
+      .title {
+        font-size: 2.4rem;
+        margin-bottom: 25px;
+      }
+      .subtitle {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+      .description {
+        margin-bottom: 35px;
+        &--price {
+          font-size: 1.8rem;
+        }
+      }
+      .items-counter {
+        &__form {
+          margin-bottom: 35px;
+        }
+      }
+    }
+    &.not-in-stock {
+      .not-available {
+        top: 0;
+        right: 0;
+      }
+    }
+  }
   .reviews-page {
     &__list {
       grid-template-columns: 1fr;
@@ -917,53 +969,6 @@
     }
   }
   .product {
-    &__body {
-      display: block;
-      .thumbnails {
-        max-width: 100%;
-        margin-right: 0;
-      }
-      .control {
-        display: block;
-        margin-bottom: 40px;
-      }
-      .thumbnails + .control {
-        margin-top: 5px;
-      }
-      .thumbnail + .thumbnail {
-        margin-top: 0;
-      }
-      .info {
-        position: static;
-        max-width: 100%;
-        padding-bottom: 40px;
-      }
-      .title {
-        font-size: 2.4rem;
-        margin-bottom: 25px;
-      }
-      .subtitle {
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-      }
-      .description {
-        margin-bottom: 35px;
-        &--price {
-          font-size: 1.8rem;
-        }
-      }
-      .items-counter {
-        &__form {
-          margin-bottom: 35px;
-        }
-      }
-    }
-    &.not-in-stock {
-      .not-available {
-        top: 0;
-        right: 0;
-      }
-    }
     &__popup {
       width: calc(100% - 30px);
       right: 15px;

@@ -99,43 +99,6 @@ if (feedbackSlider) {
   }).mount();
 }
 
-// Product page slider
-const thumbnailSlider = document.querySelector('.splide.control');
-if (thumbnailSlider) {
-  const thumbnailControl = new Splide('.splide.control', {
-    arrows: false,
-    destroy: true,
-    fixedWidth: 53,
-    fixedHeight: 80,
-    isNavigation: true,
-    gap: 5,
-    pagination: false,
-    cover: true,
-    breakpoints: {
-      767: {
-        destroy: false,
-      },
-    },
-  }).mount();
-
-  const primarySlider = document.querySelector('.splide.thumbnails');
-  if (primarySlider) {
-    const primary = new Splide('.splide.thumbnails', {
-      arrows: false,
-      destroy: true,
-      pagination: false,
-      perPage: 1,
-      type: 'fade',
-      breakpoints: {
-        767: {
-          destroy: false,
-        },
-      },
-    });
-    primary.sync(thumbnailControl).mount();
-  }
-}
-
 // Cart items counter
 const countUps = document.querySelectorAll('.counter--up');
 const countDowns = document.querySelectorAll('.counter--down');

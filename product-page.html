@@ -155,8 +155,8 @@
             </div>
           </div>
           <div class="info">
-            <h1 class="title">Face cream</h1>
-            <p class="description description--bold description--price">
+            <h1 class="title" id="product_title">Face cream</h1>
+            <p class="description description--bold description--price" id="product_price">
               $ 60.00
             </p>
             <h2 class="subtitle">Description:</h2>
@@ -184,17 +184,17 @@
               repeated if necessary. For external use only.
             </p>
             <h2 class="subtitle">Quantity:</h2>
-            <form action="#" class="items-counter">
+            <form action="" class="items-counter" onsubmit="return false;">
               <div class="items-counter__form">
                 <button type="button" class="counter counter--down" aria-label="remove item form cart">-</button>
                 <input type="text" name="quantity" class="input input--qty" value="1" inputmode="numeric">
                 <button type="button" class="counter counter--up" aria-label="add item to cart">+</button>
               </div>
-              <button type="submit" class="btn btn--black btn--mobile open-popup">Add to cart</button>
+              <button type="submit" class="btn btn--black btn--mobile open-popup" id="add_to_cart">Add to cart</button>
             </form>
           </div>
         </div>
-        <div class="cart-popup product__popup popup active">
+        <div class="popup cart-popup product__popup" id="cart_popup">
           <div class="cart-popup__body">
             <button type="button" class="cart-popup__close close" aria-label="close cart popup">
               <img src="img/icons/icon-close.svg" class="inject-me" alt="" aria-hidden="true">
@@ -202,11 +202,11 @@
             <p class="cart-popup__heading">Added to cart</p>
             <div class="cart-popup__info">
               <div class="cart-popup__thumbnail ibg">
-                <img src="img/product-face-cream-1.jpg" alt="face cream">
+                <img src="" id="popup_thumb" alt="">
               </div>
               <div class="cart-popup__details">
-                <p class="cart-popup__title">Face cream</p>
-                <p class="cart-popup__price">$ 60.00</p>
+                <p class="cart-popup__title" id="popup_title"></p>
+                <p class="cart-popup__price" id="popup_price"></p>
                 <a href="#!" class="btn btn--black">Go to cart</a>
               </div>
             </div>
@@ -300,6 +300,7 @@
 </footer><script src="js/libs/svg-injector.js"></script>
 <script src="js/libs/splide.min.js"></script>
 <script src="js/libs/bodyScrollLock.min.js"></script>
-<script src="js/main.js"></script></body>
+<script src="js/main.js"></script>  <script src="js/product.js"></script>
+</body>
 
 </html>
