@@ -70,6 +70,11 @@ main {
 a {
   transition: color @transition;
 }
+button:disabled,
+input:disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
 
 .breadcrumbs {
   margin-bottom: 30px;
@@ -352,9 +357,9 @@ a {
     max-width: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background: @white;
     border: 1px solid @black;
+    transition: opacity @transition;
     .counter {
       flex: 0 0 33.3%;
       width: 100%;

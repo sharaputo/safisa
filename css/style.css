@@ -350,6 +350,11 @@ main {
 a {
   transition: color 0.3s ease-in-out;
 }
+button:disabled,
+input:disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
 .breadcrumbs {
   margin-bottom: 30px;
 }
@@ -627,9 +632,9 @@ a {
   max-width: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background: #ffffff;
   border: 1px solid #2f2e2e;
+  transition: opacity 0.3s ease-in-out;
 }
 .items-counter__form .counter {
   flex: 0 0 33.3%;
@@ -2351,6 +2356,9 @@ a {
 }
 .product__body .items-counter__form {
   margin-bottom: 40px;
+}
+.product__body .items-counter button {
+  transition: opacity 0.3s ease-in-out;
 }
 .product.not-in-stock .not-available {
   display: flex;

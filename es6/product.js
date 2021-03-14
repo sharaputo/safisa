@@ -37,6 +37,7 @@ if (thumbnailSlider) {
 
 // Add to cart popup notification
 const addToCart = document.querySelector('#add_to_cart');
+const itemsCounter = document.querySelector('#items_counter');
 const cartPopup = document.querySelector('#cart_popup');
 const cartCounter = document.querySelector('#cart_counter');
 
@@ -50,6 +51,9 @@ function showPopup() {
   getThumb();
   getTitle();
   getPrice();
+
+  addToCart.disabled = true;
+  itemsCounter.disabled = true;
 }
 
 function getThumb() {

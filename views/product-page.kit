@@ -83,12 +83,14 @@
             </p>
             <h2 class="subtitle">Quantity:</h2>
             <form action="" class="items-counter" onsubmit="return false;">
-              <div class="items-counter__form">
+              <fieldset class="items-counter__form" id="items_counter">
                 <button type="button" class="counter counter--down" aria-label="remove item form cart">-</button>
                 <input type="text" name="quantity" class="input input--qty" value="1" inputmode="numeric">
                 <button type="button" class="counter counter--up" aria-label="add item to cart">+</button>
-              </div>
-              <button type="button" class="btn btn--black btn--mobile open-popup" id="add_to_cart">Add to cart</button>
+              </fieldset>
+              <button type="submit" class="btn btn--black btn--mobile open-popup" id="add_to_cart">
+                Add to cart
+              </button>
             </form>
           </div>
         </div>
