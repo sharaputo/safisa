@@ -312,16 +312,14 @@
       margin: 0;
       margin-bottom: 40px;
     }
-    &__nav {
+    &__menu {
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 40px;
-      .menu {
-        flex-direction: column;
-        align-items: center;
-      }
-      .menu__item + .menu__item {
-        margin-top: 25px;
-        margin-left: 0;
-      }
+    }
+    .menu__item + .menu__item {
+      margin-top: 25px;
+      margin-left: 0;
     }
     &__links {
       flex-direction: column;
@@ -334,7 +332,8 @@
       margin-left: 0;
     }
     &__socials {
-      flex: 0;
+      flex-grow: 0;
+      flex-shrink: 0;
       justify-content: center;
       max-width: 100%;
       margin-bottom: 40px;
@@ -342,9 +341,9 @@
     &__social {
       flex: 0 0 35px;
       max-width: 35px;
-    }
-    &__social + &__social {
-      margin-left: 20px;
+      & + & {
+        margin-left: 20px;
+      }
     }
   }
   .header {
