@@ -221,6 +221,27 @@
     }
   }
 }
+.buyers {
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: @black;
+    margin-bottom: 20px;
+  }
+  &__info {
+    max-width: 600px;
+    & + & {
+      margin-top: 15px;
+    }
+    &--general {
+      margin-bottom: 20px;
+    }
+  }
+}
 .cart-popup {
   background: @white;
   border: 1px solid @grey;
@@ -797,27 +818,6 @@
   }
   &__social + &__social {
     margin-left: 15px;
-  }
-}
-.delivery {
-  &__title {
-    margin-bottom: 40px;
-  }
-  .subtitle {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.3;
-    color: @black;
-    margin-bottom: 20px;
-  }
-  .info {
-    max-width: 600px;
-    &--general {
-      margin-bottom: 20px;
-    }
-  }
-  .info + .info {
-    margin-top: 15px;
   }
 }
 .error-404 {

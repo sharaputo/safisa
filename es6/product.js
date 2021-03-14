@@ -1,4 +1,4 @@
-// Product page slider
+// Product page mobile slider
 const thumbnailSlider = document.querySelector('.splide.control');
 if (thumbnailSlider) {
   const thumbnailControl = new Splide('.splide.control', {
@@ -35,7 +35,7 @@ if (thumbnailSlider) {
   }
 }
 
-// Add to cart popup notification
+// "Added to cart" popup notification
 const addToCart = document.querySelector('#add_to_cart');
 const itemsCounter = document.querySelector('#items_counter');
 const cartPopup = document.querySelector('#cart_popup');
