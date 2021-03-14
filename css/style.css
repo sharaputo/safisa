@@ -1419,6 +1419,15 @@ input:disabled {
 .buyers__info + .buyers__info {
   margin-top: 15px;
 }
+.buyers__info a {
+  font-weight: 600;
+  color: #2f2e2e;
+}
+.buyers__info a:hover,
+.buyers__info a:focus,
+.buyers__info a:active {
+  text-decoration: underline;
+}
 .buyers__info--general {
   margin-bottom: 20px;
 }
