@@ -2043,7 +2043,7 @@ input:disabled {
 }
 .feedback__slider .splide__arrow {
   position: absolute;
-  top: 56%;
+  top: 220px;
   width: 23px;
   z-index: 2;
 }
