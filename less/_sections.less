@@ -726,12 +726,13 @@
       color: @black;
       padding-bottom: 20px;
       border-bottom: 1px solid @black;
-      transition: border @transition;
+      transition: color @transition, border @transition;
       &::placeholder {
         text-transform: uppercase;
         transition: color @transition;
       }
-      &.error {
+      &._error {
+        color: @red;
         border-bottom-color: @red;
         &::placeholder {
           color: @red;
@@ -743,6 +744,16 @@
           color: #000000;
         }
       }
+    }
+  }
+  &__warning {
+    display: none;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    color: @red;
+    margin-bottom: 15px;
+    &.active {
+      display: block;
     }
   }
   &__policy {
