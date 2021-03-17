@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let error = formValidate(form);
 
     if (error === 0) {
-      form.classList.add('_sending');
+      // form.classList.add('_sending');
       let response = await fetch('sendmail.php', {
         method: 'POST',
         body: formData,
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (response.ok) {
         let result = await response.json();
         form.reset();
-        form.classList.remove('_sending');
+        // form.classList.remove('_sending');
         successPopup.classList.add('active');
       } else {
         alert('Error!');

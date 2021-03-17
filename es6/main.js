@@ -130,6 +130,7 @@ for (let i = 0; i < countDowns.length; i++) {
 
 // Popups close
 const closePopups = document.querySelectorAll('.popup .close');
+const popupBackdrop = document.querySelector('.popup__backdrop');
 
 for (let i = 0; i < closePopups.length; i++) {
   const closePopup = closePopups[i];
@@ -142,6 +143,15 @@ for (let i = 0; i < closePopups.length; i++) {
       }
     });
   }
+}
+if (popupBackdrop) {
+  popupBackdrop.addEventListener('click', function () {
+    const popups = document.querySelectorAll('.popup');
+    for (let i = 0; i < popups.length; i++) {
+      const popup = popups[i];
+      popup.classList.remove('active');
+    }
+  });
 }
 
 // Cookie close
