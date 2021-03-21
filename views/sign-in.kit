@@ -12,41 +12,44 @@
           <h1 class="page-title sign-in__title">Sign in</h1>
           <ul class="sign-in__socials" role="none">
             <li class="sign-in__social">
-              <a href="#google" aria-label="google login">
-                <img src="img/icons/icon-google.svg" class="inject-me" alt="icon google">
+              <a href="#google" aria-label="login with google">
+                <span class="icon-google"></span>
               </a>
             </li>
             <li class="sign-in__social">
-              <a href="#google" aria-label="facebook login">
-                <img src="img/icons/icon-facebook.svg" class="inject-me" alt="icon facebook">
+              <a href="#google" aria-label="login with facebook">
+                <span class="icon-facebook"></span>
               </a>
             </li>
           </ul>
           <div class="sign-in__choice">or</div>
           <div class="sign-in__form">
-            <form action="#!" class="profile-form">
+            <form class="profile-form" id="sign_in_form">
               <ul class="profile-form__inputs" role="none">
                 <li class="profile-form__input">
                   <label for="signin_email">Email</label>
                   <div class="input">
-                    <input type="email" id="signin_email" name="signin_email" placeholder="info@gmail.com">
+                    <input type="email" class="_email _req" id="signin_email" name="signin_email"
+                      placeholder="info@gmail.com">
                   </div>
                 </li>
                 <li class="profile-form__input">
                   <div class="label-wrapper">
                     <label for="signin_password">Password</label>
-                    <a href="#password-recovery" class="remind-password">Forgot?</a>
+                    <a href="#password-recovery" class="remind-password" aria-label="Recover password">
+                      Forgot?
+                    </a>
                   </div>
                   <div class="input">
-                    <input type="password" id="signin_password" name="signin_password"
+                    <input type="password" class="_req" id="signin_password" name="signin_password"
                       placeholder="......................">
-                    <button type="button" class="password-toggle" aria-label="show or hide password">
-                      <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
-                      <img src="img/icons/icon-password-hide.svg" class="inject-me hidden" alt="icon hide password">
+                    <button type="button" class="password-toggle" aria-label="toggle password visibility">
+                      <span class="icon-password-hide" aria-hidden="true"></span>
                     </button>
                   </div>
                 </li>
               </ul>
+              <div class="profile-form__warning">Invalid Email or password.</div>
               <button type="submit" class="btn btn--black">Sign in</button>
             </form>
           </div>
@@ -57,6 +60,7 @@
   </main>
   <!-- @import "components/footer.html" -->
   <!-- @import "components/scripts.html" -->
+  <script src="js/sign-in-form.js"></script>
 </body>
 
 </html>

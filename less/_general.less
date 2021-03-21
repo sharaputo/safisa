@@ -1,49 +1,3 @@
-@font-face {
-  font-family: 'Raleway';
-  font-weight: 300;
-  font-style: normal;
-  src: local('Raleway'), local('Raleway-Light'),
-    url('../fonts/Raleway-Light.woff2') format('woff2'),
-    url('../fonts/Raleway-Light.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Raleway';
-  font-weight: 400;
-  font-style: normal;
-  src: local('Raleway'), local('Raleway-Regular'),
-    url('../fonts/Raleway-Regular.woff2') format('woff2'),
-    url('../fonts/Raleway-Regular.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Raleway';
-  font-weight: 500;
-  font-style: normal;
-  src: local('Raleway'), local('Raleway-Medium'),
-    url('../fonts/Raleway-Medium.woff2') format('woff2'),
-    url('../fonts/Raleway-Medium.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Raleway';
-  font-weight: 600;
-  font-style: normal;
-  src: local('Raleway'), local('Raleway-SemiBold'),
-    url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
-    url('../fonts/Raleway-SemiBold.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-style: normal;
-  src: local('Raleway'), local('Raleway-Bold'),
-    url('../fonts/Raleway-Bold.woff2') format('woff2'),
-    url('../fonts/Raleway-Bold.woff') format('woff');
-  font-display: swap;
-}
-
 :root {
   font-size: 10px;
 }
@@ -322,7 +276,8 @@ input:disabled {
     &::placeholder {
       color: @grey;
     }
-    &.error {
+    &._error {
+      color: @red;
       border-color: @red;
       &::placeholder {
         color: @red;
@@ -339,20 +294,21 @@ input:disabled {
     position: absolute;
     right: 16px;
     bottom: 18px;
-    max-width: 15px;
-    width: 100%;
-    svg {
-      fill: @grey;
-      transition: fill @transition;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 1.5rem;
+      color: @grey;
+      transition: color @transition;
     }
     &:hover,
     &:focus {
-      svg {
-        fill: @black;
+      span {
+        color: @black;
       }
-    }
-    .hidden {
-      display: none;
     }
   }
 }
@@ -467,6 +423,16 @@ input:disabled {
   .btn {
     display: block;
     width: 100%;
+  }
+  &__warning {
+    display: none;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    color: @red;
+    margin-bottom: 15px;
+    &.active {
+      display: block;
+    }
   }
 }
 .review-card {

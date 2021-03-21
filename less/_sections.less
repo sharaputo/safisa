@@ -1584,14 +1584,15 @@
     a {
       &:hover,
       &:focus {
-        svg {
-          fill: @brown;
+        span {
+          color: @brown;
         }
       }
     }
-    svg {
-      fill: @black;
-      transition: fill @transition;
+    span {
+      font-size: 3rem;
+      color: @black;
+      transition: color @transition;
     }
   }
   &__choice {

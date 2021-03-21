@@ -9,6 +9,8 @@
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
 
   <style>
@@ -113,38 +115,37 @@
         <div class="sign-up__body">
           <h1 class="page-title sign-up__title">Sign up</h1>
           <div class="sign-up__form">
-            <form action="#!" class="profile-form">
+            <form class="profile-form" id="sign_up_form">
               <ul class="profile-form__inputs" role="none">
                 <li class="profile-form__input">
                   <label for="signup_email">Email</label>
                   <div class="input">
-                    <input type="email" class="error" id="signup_email" name="signup_email"
+                    <input type="email" class="_email _req" id="signup_email" name="signup_email"
                       placeholder="info@gmail.com">
                   </div>
                 </li>
                 <li class="profile-form__input">
                   <label for="signup_password">Password</label>
                   <div class="input">
-                    <input type="password" id="signup_password" name="signup_password"
+                    <input type="password" class="_req" id="signup_password" name="signup_password"
                       placeholder="......................">
-                    <button type="button" class="password-toggle" aria-label="show or hide password">
-                      <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
-                      <img src="img/icons/icon-password-hide.svg" class="inject-me hidden" alt="icon hide password">
+                    <button type="button" class="password-toggle" aria-label="toggle password visibility">
+                      <span class="icon-password-hide" aria-hidden="true"></span>
                     </button>
                   </div>
                 </li>
                 <li class="profile-form__input">
                   <label for="signup_password_confirm">Confirm password</label>
                   <div class="input">
-                    <input type="password" id="signup_password_confirm" name="signup_password_confirm"
+                    <input type="password" class="_req" id="signup_password_confirm" name="signup_password_confirm"
                       placeholder="......................">
-                    <button type="button" class="password-toggle" aria-label="show password">
-                      <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
-                      <img src="img/icons/icon-password-hide.svg" class="inject-me hidden" alt="icon hide password">
+                    <button type="button" class="password-toggle" aria-label="toggle password visibility">
+                      <span class="icon-password-hide" aria-hidden="true"></span>
                     </button>
                   </div>
                 </li>
               </ul>
+              <div class="profile-form__warning">Invalid Email or password.</div>
               <p class="profile-form__agreement">
                 By registering, you accept the
                 <a href="#privacy-policy">site rules</a> and consent to the
@@ -209,6 +210,7 @@
 </footer><script src="js/libs/svg-injector.js"></script>
 <script src="js/libs/splide.min.js"></script>
 <script src="js/libs/bodyScrollLock.min.js"></script>
-<script src="js/main.js"></script></body>
+<script src="js/main.js"></script>  <script src="js/sign-up-form.js"></script>
+</body>
 
 </html>
