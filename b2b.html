@@ -149,7 +149,7 @@
                 Write to us - and we will help you form the task and tell you
                 about the process.
               </p>
-              <form action="#!" id="contact_form">
+              <form id="contact_form">
                 <ul class="contact__form" role="none">
                   <li class="contact__input">
                     <label for="name" class="screen-reader">Name</label>
@@ -161,7 +161,7 @@
                   </li>
                   <li class="contact__input">
                     <label for="email" class="screen-reader">Email</label>
-                    <input type="email" class="_email _req" id="email" name="email" placeholder="email *">
+                    <input type="email" class="_email _req" id="email" name="email" placeholder="Email *">
                   </li>
                 </ul>
                 <div class="contact__warning">Please fill in all required fields</div>
@@ -177,14 +177,14 @@
         </div>
       </div>
     </section>
-    <div class="contact-popup popup">
+    <div class="contact-popup popup" id="success_popup">
       <div class="contact-popup__backdrop popup__backdrop"></div>
       <div class="contact-popup__body">
-        <button type="button" class="close" aria-label="close popup">
-          <img src="img/icons/icon-close.svg" class="inject-me" alt="close icon">
+        <button type="button" class="close" aria-label="close modal popup">
+          <span class="icon-close" aria-hidden="true"></span>
         </button>
-        <div class="contact-popup__icon">
-          <img src="img/icons/icon-success.svg" alt="icon success">
+        <div class="contact-popup__icon" aria-hidden="true">
+          <span class="icon-success"></span>
         </div>
         <p class="contact-popup__text">
           You have successfully submitted your application.<br>A manager
@@ -225,24 +225,23 @@
       <ul class="footer__socials" role="none">
         <li class="footer__social">
           <a href="#facebook">
-            <img src="img/icons/icon-facebook.svg" class="inject-me" alt="facebook link">
+            <span class="icon-facebook" aria-hidden="true"></span>
           </a>
         </li>
         <li class="footer__social">
           <a href="#instagram">
-            <img src="img/icons/icon-instagram.svg" class="inject-me" alt="instagram link">
+            <span class="icon-instagram" aria-hidden="true"></span>
           </a>
         </li>
         <li class="footer__social">
           <a href="#pinterest">
-            <img src="img/icons/icon-pinterest.svg" class="inject-me" alt="pinterest link">
+            <span class="icon-pinterest" aria-hidden="true"></span>
           </a>
         </li>
       </ul>
     </div>
   </div>
-</footer><script src="js/libs/svg-injector.js"></script>
-<script src="js/libs/splide.min.js"></script>
+</footer><script src="js/libs/splide.min.js"></script>
 <script src="js/libs/bodyScrollLock.min.js"></script>
 <script src="js/main.js"></script>  <script src="js/contact-form.js"></script>
 </body>

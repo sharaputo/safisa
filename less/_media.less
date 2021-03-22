@@ -307,7 +307,8 @@
       margin-right: 0;
     }
     &__logo {
-      flex: 0;
+      max-width: 97px;
+      flex-basis: auto;
       order: -1;
       margin: 0;
       margin-bottom: 40px;
@@ -332,15 +333,16 @@
       margin-left: 0;
     }
     &__socials {
-      flex-grow: 0;
-      flex-shrink: 0;
+      flex-basis: auto;
       justify-content: center;
       max-width: 100%;
       margin-bottom: 40px;
     }
     &__social {
-      flex: 0 0 35px;
-      max-width: 35px;
+      flex-basis: 35px;
+      span {
+        font-size: 3.5rem;
+      }
       & + & {
         margin-left: 20px;
       }
@@ -729,13 +731,6 @@
   .cart-popup {
     &__body {
       padding: 35px;
-    }
-    .close {
-      top: 11px;
-      right: 11px;
-    }
-    .heading {
-      font-size: 1.8rem;
     }
   }
   .category {
@@ -1163,6 +1158,25 @@
   .contact-popup {
     &__body {
       padding: 30px;
+      .close {
+        width: 22px;
+        height: 22px;
+        top: 15px;
+        right: 15px;
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    &__icon {
+      width: 40px;
+      height: 40px;
+      span {
+        font-size: 4rem;
+      }
+    }
+    &__text {
+      font-size: 1.6rem;
     }
   }
   .cookie {

@@ -13,9 +13,9 @@
     margin-right: 4.8vw;
   }
   &__logo {
-    flex: 0 0 97px;
-    width: 100%;
-    max-width: 97px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 97px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -27,27 +27,28 @@
     margin-left: 2.4vw;
   }
   &__socials {
-    flex: 0 0 120px;
-    width: 100%;
-    max-width: 120px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 120px;
     display: flex;
     align-items: center;
   }
   &__social {
-    flex: 0 0 30px;
-    width: 100%;
-    max-width: 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 30px;
     a {
       &:hover,
       &:focus {
-        svg {
-          fill: @brown;
+        span {
+          color: @brown;
         }
       }
     }
-    svg {
-      fill: @white;
-      transition: fill @transition;
+    span {
+      font-size: 3rem;
+      color: @white;
+      transition: color @transition;
     }
   }
   &__social + &__social {

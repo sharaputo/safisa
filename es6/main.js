@@ -1,7 +1,3 @@
-// SVG Inline Injection
-const mySVGsToInject = document.querySelectorAll('img.inject-me');
-SVGInjector(mySVGsToInject);
-
 // Header menu dropdowns
 const isMobile = {
   Android: function () {
