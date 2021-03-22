@@ -1,8 +1,8 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('#profile_form');
-  const warning = document.querySelector('.profile-form__warning');
+  const form = document.querySelector('#profile_form'),
+        warning = document.querySelector('.profile-form__warning');
   form.addEventListener('submit', formSend);
 
   async function formSend(e) {
