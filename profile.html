@@ -114,7 +114,7 @@
       <div class="container">
         <h1 class="page-title profile__title">Profile</h1>
         <div class="profile__body">
-          <nav class="profile__nav" aria-label="breadcrumb">
+          <nav class="profile__nav" aria-label="profile links">
             <ul class="profile__links">
               <li class="profile__link">
                 <a href="#profile" aria-current="page">Profile</a>
@@ -125,53 +125,55 @@
             </ul>
           </nav>
           <div class="profile__form">
-            <form action="#!" class="form">
+            <form class="form" id="profile_form">
               <ul class="form__inputs" role="none">
                 <li class="form__input">
                   <label for="profile_name">Full name</label>
                   <div class="input">
-                    <input type="text" id="profile_name" name="profile_name" placeholder="Julia Rven">
+                    <input type="text" class="_name _req" id="profile_name" name="profile_name"
+                      placeholder="Julia Rven">
                   </div>
                 </li>
                 <li class="form__input">
                   <label for="profile_email">Email</label>
                   <div class="input">
-                    <input type="email" id="profile_email" name="profile_email" placeholder="info@gmail.com">
+                    <input type="email" class="_email _req" id="profile_email" name="profile_email"
+                      placeholder="info@gmail.com">
                   </div>
                 </li>
                 <li class="form__input">
                   <label for="profile_phone">Telephone</label>
                   <div class="input">
-                    <input type="tel" id="profile_phone" name="profile_phone" placeholder="+7 921 336 04 23">
+                    <input type="tel" class="_phone _req" id="profile_phone" name="profile_phone"
+                      placeholder="+7 921 336 04 23">
                   </div>
                 </li>
                 <li class="form__input">
                   <label for="profile_password">Password</label>
                   <div class="input">
-                    <input type="password" id="profile_password" name="profile_password"
+                    <input type="password" class=" _req" id="profile_password" name="profile_password"
                       placeholder="......................">
-                    <button aria-label="show password" type="button" class="password-toggle">
-                      <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
-                      <img src="img/icons/icon-password-hide.svg" class="inject-me hidden" alt="icon hide password">
+                    <button type="button" class="password-toggle" aria-label="toggle password visibility">
+                      <span class="icon-password-hide" aria-hidden="true"></span>
                     </button>
                   </div>
                 </li>
                 <li class="form__input">
                   <label for="profile_password_confirm">Confirm password</label>
                   <div class="input">
-                    <input type="password" id="profile_password_confirm" name="profile_password_confirm"
+                    <input type="password" class="_password _req" id="profile_password_confirm"
                       placeholder="......................">
-                    <button type="button" class="password-toggle" aria-label="show password">
-                      <img src="img/icons/icon-password-show.svg" class="inject-me" alt="icon show password">
-                      <img src="img/icons/icon-password-hide.svg" class="inject-me hidden" alt="icon hide password">
+                    <button type="button" class="password-toggle" aria-label="toggle password visibility">
+                      <span class="icon-password-hide" aria-hidden="true"></span>
                     </button>
                   </div>
                 </li>
               </ul>
+              <div class="profile-form__warning">Please, fill in all the required fields.</div>
               <div class="form__buttons">
                 <button type="submit" class="btn btn--brown">Save</button>
                 <!--Reset form inputs-->
-                <button type="button" class="btn btn--black">Cancel</button>
+                <button type="button" class="btn btn--black" id="form_reset">Cancel</button>
               </div>
             </form>
           </div>
@@ -230,6 +232,7 @@
 </footer><script src="js/libs/svg-injector.js"></script>
 <script src="js/libs/splide.min.js"></script>
 <script src="js/libs/bodyScrollLock.min.js"></script>
-<script src="js/main.js"></script></body>
+<script src="js/main.js"></script>  <script src="js/profile-form.js"></script>
+</body>
 
 </html>

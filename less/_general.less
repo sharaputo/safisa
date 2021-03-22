@@ -273,14 +273,21 @@ input:disabled {
     padding: 15px;
     border: 1px solid @grey;
     border-radius: 5px;
+    transition: border @transition;
     &::placeholder {
       color: @grey;
+      transition: color @transition;
     }
     &._error {
       color: @red;
       border-color: @red;
       &::placeholder {
         color: @red;
+      }
+      + .password-toggle {
+        span {
+          color: @red;
+        }
       }
     }
   }
