@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let error = formValidate(form);
 
     if (error === 0) {
+      removeWarning();
       console.log('Signed-up');
     } else {
       addWarning();
@@ -39,11 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
 
-        // Reset warning and error state on input focus
+        // Reset error state on input focus
         input.onfocus = function () {
           if (!input.classList.contains('_password')) {
             formRemoveError(input);
-            removeWarning();
           }
         };
       }

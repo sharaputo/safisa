@@ -1,31 +1,17 @@
 'use strict';
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('#contact_form'),
-    successPopup = document.querySelector('#success_popup'),
-    warning = document.querySelector('.contact__warning');
 
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('#checkout_form'),
+        warning = document.querySelector('#checkout_form .warning');
   form.addEventListener('submit', formSend);
 
   async function formSend(e) {
     e.preventDefault();
-
     let error = formValidate(form);
 
-    let formData = new FormData(form);
-
     if (error === 0) {
-      let response = await fetch('sendmail.php', {
-        method: 'POST',
-        body: formData,
-      });
-      if (response.ok) {
-        let result = await response.json();
-        removeWarning();
-        form.reset();
-        successPopup.classList.add('active');
-      } else {
-        alert('Error!');
-      }
+      removeWarning();
+      console.log('Your order has been accepted');
     } else {
       addWarning();
     }
@@ -47,14 +33,19 @@ document.addEventListener('DOMContentLoaded', function () {
             formAddError(input);
             error++;
           }
+        } else if (input.classList.contains('_checkbox')) {
+          if (input.checked === false) {
+            formAddError(input);
+            error++;
+          }
         } else {
           if (input.value === '') {
             formAddError(input);
             error++;
           }
-        }
+        } // Reset error state on input focus
 
-        // Reset error state on input focus
+
         input.onfocus = function () {
           formRemoveError(input);
         };
@@ -66,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function formAddError(input) {
       input.classList.add('_error');
     }
+
     function formRemoveError(input) {
       input.classList.remove('_error');
     }
@@ -73,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function addWarning() {
       warning.classList.add('active');
     }
+
     function removeWarning() {
       warning.classList.remove('active');
     }
@@ -80,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function emailCheck(input) {
       return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
+
     function phoneCheck(input) {
       return !/^[0-9]+$/.test(input.value);
     }

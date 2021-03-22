@@ -52,21 +52,24 @@ input:disabled {
       cursor: default;
     }
     & + & {
-      padding-left: 10px;
+      padding-left: 16px;
       margin-left: 10px;
       &::before {
-        display: block;
-        content: '';
-        width: 3px;
-        height: 6px;
+        content: '\e90b';
         position: absolute;
         top: 50%;
         left: 0;
-        transform: translateY(-50%);
-        background: url('../img/icons/icon-shevron-left.svg');
-        background-position: 50% 50%;
-        background-size: contain;
-        background-repeat: no-repeat;
+        transform: translateY(-50%) rotate(-90deg);
+        font-family: 'icons' !important;
+        font-style: normal;
+        font-variant: normal;
+        font-size: 0.6rem;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        speak: never;
       }
     }
   }
@@ -295,6 +298,7 @@ input:disabled {
     }
   }
   input[disabled] {
+    opacity: 1;
     cursor: default;
     &::placeholder {
       color: @black;
@@ -486,12 +490,10 @@ input:disabled {
       top: -13px;
       left: 0;
       transform: rotate(180deg);
-      // background-image: url('../img/icons/icon-quote-left.svg');
     }
     &::after {
       right: 0;
       bottom: 20px;
-      // background-image: url('../img/icons/icon-quote-right.svg');
     }
   }
   &__date {

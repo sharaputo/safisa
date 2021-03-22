@@ -125,14 +125,14 @@
         <h1 class="page-title checkout__title">Checkout</h1>
         <div class="checkout__body">
           <div class="checkout__form">
-            <form action="#!" class="checkout-form">
+            <form class="checkout-form" id="checkout_form">
               <div class="checkout-form__email">
                 <fieldset>
                   <legend>1. Your Email</legend>
                   <div class="input">
                     <label for="checkout_email" class="screen-reader">Your Email</label>
-                    <input type="email" name="checkout_email" id="checkout_email" class="error"
-                      placeholder="info@gmail.com" required>
+                    <input type="email" class="_email _req" name="checkout_email" id="checkout_email"
+                      placeholder="info@gmail.com">
                   </div>
                 </fieldset>
               </div>
@@ -142,16 +142,17 @@
                   <ul class="inputs" role="none">
                     <li class="input">
                       <label for="checkout_name" class="screen-reader">First Name</label>
-                      <input type="text" id="checkout_name" name="checkout_name" placeholder="First Name">
+                      <input type="text" class="_req" id="checkout_name" name="checkout_name" placeholder="First Name">
                     </li>
                     <li class="input">
                       <label for="checkout_surname" class="screen-reader">Last Name</label>
-                      <input type="text" id="checkout_surname" name="checkout_surname" placeholder="Last Name">
+                      <input type="text" class="_req" id="checkout_surname" name="checkout_surname"
+                        placeholder="Last Name">
                     </li>
                   </ul>
                   <div class="input">
                     <label for="checkout_address" class="screen-reader">Adress</label>
-                    <input type="text" name="checkout_address" id="checkout_address" placeholder="Adress">
+                    <input type="text" class="_req" name="checkout_address" id="checkout_address" placeholder="Address">
                   </div>
                   <div class="input">
                     <label for="checkout_usa" class="screen-reader">United States</label>
@@ -160,39 +161,26 @@
                   <ul class="inputs">
                     <li class="input">
                       <label for="checkout_zip" class="screen-reader">ZIP Code</label>
-                      <input type="text" name="checkout_zip" id="checkout_zip" placeholder="ZIP Code">
+                      <input type="text" class="_req" name="checkout_zip" id="checkout_zip" placeholder="ZIP Code">
                     </li>
                     <li class="input">
                       <label for="checkout_city" class="screen-reader">City</label>
-                      <input type="text" name="checkout_city" id="checkout_city" placeholder="City">
+                      <input type="text" class="_req" name="checkout_city" id="checkout_city" placeholder="City">
                     </li>
                     <li class="input">
                       <label for="checkout_state" class="screen-reader">State</label>
-                      <input type="text" name="checkout_state" id="checkout_state" placeholder="State">
+                      <input type="text" class="_req" name="checkout_state" id="checkout_state" placeholder="State">
                     </li>
                   </ul>
                   <div class="input">
                     <label for="checkout_phone" class="screen-reader">Phone Number</label>
-                    <input type="tel" name="checkout_phone" id="checkout_phone" placeholder="Phone Number">
+                    <input type="tel" class="_phone _req" name="checkout_phone" id="checkout_phone"
+                      placeholder="Phone Number">
                   </div>
                   <ul class="radios delivery">
                     <li class="radio">
                       <div class="option">
-                        <input type="radio" id="checkout_courier" name="checkout_shipping">
-                        <div class="input-control"></div>
-                        <div class="label">
-                          <label for="checkout_courier">Courier delivery (1-6 days)</label>
-                          <p class="info">Online payment</p>
-                        </div>
-                      </div>
-                      <div class="price">
-                        <span class="label">+</span>
-                        <span class="value">$ 40</span>
-                      </div>
-                    </li>
-                    <li class="radio">
-                      <div class="option">
-                        <input type="radio" id="checkout_usps" name="checkout_shipping">
+                        <input type="radio" id="checkout_usps" name="checkout_shipping" checked>
                         <div class="input-control"></div>
                         <div class="label">
                           <label for="checkout_usps">USPS (3-5 days)</label>
@@ -212,24 +200,20 @@
                   </div>
                   <ul class="radios payment">
                     <li class="radio">
-                      <input type="radio" id="checkout_credit_card" name="checkout_payment">
+                      <input type="radio" id="checkout_credit_card" name="checkout_payment" checked>
                       <div class="input-control"></div>
                       <label for="checkout_credit_card">Credit card</label>
-                    </li>
-                    <li class="radio">
-                      <input type="radio" id="checkout_paypal" name="checkout_payment">
-                      <div class="input-control"></div>
-                      <label for="checkout_paypal">Paypal</label>
                     </li>
                   </ul>
                 </fieldset>
                 <div class="agreement">
-                  <input type="checkbox" name="checkout_agreement" id="checkout_agreement" required>
+                  <input type="checkbox" class="_checkbox _req" name="checkout_agreement" id="checkout_agreement">
                   <label for="checkout_agreement">
                     <span>I agree with the </span>
                     <a href="#privacy-policy">Privacy Policy</a>
                   </label>
                 </div>
+                <div class="warning">Please, fill in all the necessary fields</div>
                 <button type="submit" class="btn btn--black btn--mobile">Proceed to checkout</button>
               </div>
             </form>
@@ -333,6 +317,7 @@
   </div>
 </footer><script src="js/libs/splide.min.js"></script>
 <script src="js/libs/bodyScrollLock.min.js"></script>
-<script src="js/main.js"></script></body>
+<script src="js/main.js"></script>  <script src="js/checkout-form.js"></script>
+</body>
 
 </html>

@@ -1,8 +1,7 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('#contact_form'),
-    successPopup = document.querySelector('#success_popup'),
-    warning = document.querySelector('.contact__warning');
+  const form = document.querySelector('#checkout_form'),
+    warning = document.querySelector('#checkout_form .warning');
 
   form.addEventListener('submit', formSend);
 
@@ -11,21 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let error = formValidate(form);
 
-    let formData = new FormData(form);
-
     if (error === 0) {
-      let response = await fetch('sendmail.php', {
-        method: 'POST',
-        body: formData,
-      });
-      if (response.ok) {
-        let result = await response.json();
-        removeWarning();
-        form.reset();
-        successPopup.classList.add('active');
-      } else {
-        alert('Error!');
-      }
+      removeWarning();
+      console.log('Your order has been accepted');
     } else {
       addWarning();
     }
@@ -44,6 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         } else if (input.classList.contains('_phone')) {
           if (phoneCheck(input)) {
+            formAddError(input);
+            error++;
+          }
+        } else if (input.classList.contains('_checkbox')) {
+          if (input.checked === false) {
             formAddError(input);
             error++;
           }
