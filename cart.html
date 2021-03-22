@@ -114,7 +114,7 @@
       <div class="container">
         <h1 class="page-title shopping-cart__title">Shopping cart</h1>
         <p class="no-goods">There is nothing here yet</p>
-        <form action="#">
+        <form id="cart_form">
           <div class="shopping-cart__table table">
             <div class="table__headers">
               <div class="table__header item">Item</div>
@@ -155,7 +155,7 @@
                   </button>
                   <span class="value hidden">$ 60.00</span>
                   <button type="button" class="remove" aria-label="remove item from cart">
-                    <img src="img/icons/icon-remove.svg" alt="icon remove">
+                    <span class="icon-remove" aria-hidden="true"></span>
                   </button>
                 </div>
               </div>
@@ -174,7 +174,7 @@
                   <button type="button" class="counter counter--down" aria-label="remove item form cart">
                     -
                   </button>
-                  <input type="text" name="quantity" class="input" value="1" inputmode="numeric">
+                  <input type="text" name="quantity" class="input" value="1" inputmode="numeric" maxlength="2">
                   <button type="button" class="counter counter--up" aria-label="add item to cart">
                     +
                   </button>
@@ -184,7 +184,7 @@
                 <div class="amount">
                   <span class="value">$ 60.00</span>
                   <button type="button" class="remove" aria-label="remove item from cart">
-                    <img src="img/icons/icon-remove.svg" alt="icon remove">
+                    <span class="icon-remove" aria-hidden="true"></span>
                   </button>
                 </div>
               </div>

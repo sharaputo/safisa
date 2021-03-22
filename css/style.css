@@ -685,9 +685,9 @@ input:disabled {
   transition: opacity 0.3s ease-in-out;
 }
 .items-counter__form .counter {
-  flex: 0 0 33.3%;
-  width: 100%;
-  max-width: 33.3%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 33.3%;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2;
@@ -700,9 +700,9 @@ input:disabled {
   background-color: #f5f0ec;
 }
 .items-counter__form .input {
-  flex: 1 1 auto;
-  width: 100%;
-  max-width: 33.3%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1;
@@ -2623,23 +2623,23 @@ input:disabled {
 }
 .shopping-cart__table .table__headers .item,
 .shopping-cart__table .table__content .item {
-  flex: 1 1 auto;
-  width: 100%;
-  max-width: 45%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 45%;
   margin-right: 20px;
 }
 .shopping-cart__table .table__headers .quantity,
 .shopping-cart__table .table__content .quantity {
-  flex: 1 1 auto;
-  width: 100%;
-  max-width: 35%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 35%;
   margin-right: 20px;
 }
 .shopping-cart__table .table__headers .price,
 .shopping-cart__table .table__content .price {
-  flex: 1 1 auto;
-  width: 100%;
-  max-width: 150px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 150px;
   margin-left: auto;
 }
 .shopping-cart__table .table__headers {
@@ -2682,9 +2682,9 @@ input:disabled {
   color: #a48b77;
 }
 .shopping-cart__table .table__data .product-link .image {
-  flex: 0 0 72px;
-  width: 100%;
-  max-width: 72px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 72px;
   margin-right: 35px;
   overflow: hidden;
 }
@@ -2725,9 +2725,12 @@ input:disabled {
   display: none;
 }
 .shopping-cart__table .table__data .amount .remove {
-  flex: 0 0 19px;
-  width: 100%;
-  max-width: 19px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 19px;
+}
+.shopping-cart__table .table__data .amount .remove span {
+  font-size: 1.9rem;
 }
 .shopping-cart__table .table__content + .table__content {
   margin-top: 40px;
@@ -3793,9 +3796,7 @@ input:disabled {
   }
   .shopping-cart__table .table__headers .quantity,
   .shopping-cart__table .table__content .quantity {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: none;
+    flex-basis: 25%;
   }
   .shopping-cart__table .table__headers .quantity .label--lg {
     display: none;
@@ -3812,7 +3813,6 @@ input:disabled {
     justify-content: center;
   }
   .shopping-cart__table .items-counter__form .input {
-    max-width: 100%;
     font-size: 1.8rem;
     padding: 10px 0;
   }
@@ -3929,12 +3929,12 @@ input:disabled {
   }
   .shopping-cart__table .table__headers .quantity,
   .shopping-cart__table .table__content .quantity {
+    flex-basis: 15%;
     margin-right: 10px;
   }
   .shopping-cart__table .table__headers .price,
   .shopping-cart__table .table__content .price {
     flex-basis: 100px;
-    max-width: 100px;
     margin-left: 0;
   }
   .shopping-cart__table .table__header {

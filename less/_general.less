@@ -335,9 +335,9 @@ input:disabled {
     border: 1px solid @black;
     transition: opacity @transition;
     .counter {
-      flex: 0 0 33.3%;
-      width: 100%;
-      max-width: 33.3%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 33.3%;
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 1.2;
@@ -350,9 +350,9 @@ input:disabled {
       }
     }
     .input {
-      flex: 1 1 auto;
-      width: 100%;
-      max-width: 33.3%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
       font-size: 2rem;
       font-weight: 500;
       line-height: 1;

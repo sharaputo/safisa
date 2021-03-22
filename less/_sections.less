@@ -1446,21 +1446,21 @@
         display: flex;
         align-items: center;
         .item {
-          flex: 1 1 auto;
-          width: 100%;
-          max-width: 45%;
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 45%;
           margin-right: 20px;
         }
         .quantity {
-          flex: 1 1 auto;
-          width: 100%;
-          max-width: 35%;
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: 35%;
           margin-right: 20px;
         }
         .price {
-          flex: 1 1 auto;
-          width: 100%;
-          max-width: 150px;
+          flex-grow: 0;
+          flex-shrink: 0;
+          flex-basis: 150px;
           margin-left: auto;
         }
       }
@@ -1511,9 +1511,9 @@
             }
           }
           .image {
-            flex: 0 0 72px;
-            width: 100%;
-            max-width: 72px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 72px;
             margin-right: 35px;
             overflow: hidden;
             img {
@@ -1556,9 +1556,12 @@
             }
           }
           .remove {
-            flex: 0 0 19px;
-            width: 100%;
-            max-width: 19px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 19px;
+            span {
+              font-size: 1.9rem;
+            }
           }
         }
       }
