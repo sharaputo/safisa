@@ -18,6 +18,11 @@ $body = '<h1>User Contact Details</h1>';
 if(trim(!empty($_POST['name']))){
   $body .= '<p><strong>Name:</strong> '.$_POST['name'].'</p>';
 }
+$honeypot = trim($_POST["surname"]);
+if(!empty($honeypot)) {
+  echo "Spam!";
+  exit;
+}
 if(trim(!empty($_POST['phone']))){
   $body .= '<p><strong>Phone:</strong> '.$_POST['phone'].'</p>';
 }
