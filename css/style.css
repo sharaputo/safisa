@@ -494,7 +494,7 @@ input:disabled {
   z-index: 3;
 }
 .contact-popup.active {
-  opacity: 1;
+  opacity: 1 !important;
   visibility: visible;
 }
 .contact-popup__backdrop {
@@ -1984,17 +1984,18 @@ input:disabled {
 .contact__input input:focus::placeholder {
   color: #000000;
 }
-.contact__input input[name='surname'] {
+.contact__input--special {
   border: 0;
   clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
+  height: 0;
   overflow: hidden;
   padding: 0;
-  position: absolute;
   white-space: nowrap;
   width: 1px;
-  visibility: hidden;
+  margin: 0 !important;
+}
+.contact__input--special input {
+  padding: 0;
 }
 .contact__warning {
   display: none;

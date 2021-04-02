@@ -1,35 +1,39 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
 
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/Exception.php';
+require 'phpmailer/PHPMailer.php';
 
-$mail = new PHPMailer(true);
+$name = $_POST['name'];
+$honeypot = $_POST['surname'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+
+$subject = 'New contact form Safisa website';
+$body = '<h1>User Contact Details</h1>';
+
+$mail = new PHPMailer\PHPMailer\PHPMailer();
 $mail->Charset = 'UTF-8';
 $mail->IsHTML(true);
 
 $mail->setFrom('info@safisa.shop', 'Safisa website');
 $mail->addAddress('sharaputo@icloud.com');
-$mail->Subject = 'New email form Safisa website';
 
-$body = '<h1>User Contact Details</h1>';
-
-if(trim(!empty($_POST['name']))){
-  $body .= '<p><strong>Name:</strong> '.$_POST['name'].'</p>';
+if(trim(!empty($name))){
+  $body .= '<p><strong>Name:</strong> '.$name.'</p>';
 }
-$honeypot = trim($_POST["surname"]);
+trim($honeypot);
 if(!empty($honeypot)) {
   echo "Spam!";
   exit;
 }
-if(trim(!empty($_POST['phone']))){
-  $body .= '<p><strong>Phone:</strong> '.$_POST['phone'].'</p>';
+if(trim(!empty($phone))){
+  $body .= '<p><strong>Phone:</strong> '.$phone.'</p>';
 }
-if(trim(!empty($_POST['email']))){
-  $body .= '<p><strong>Email:</strong> '.$_POST['email'].'</p>';
+if(trim(!empty($email))){
+  $body .= '<p><strong>Email:</strong> '.$email.'</p>';
 }
 
+$mail->Subject = $subject;
 $mail->Body = $body;
 
 if (!$mail->send()) {
